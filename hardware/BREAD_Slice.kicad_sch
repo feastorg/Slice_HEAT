@@ -693,193 +693,6 @@
 				)
 			)
 		)
-		(symbol "Connector:Screw_Terminal_01x02"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Screw_Terminal_01x02"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "screw terminal"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TerminalBlock*:*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Screw_Terminal_01x02_1_1"
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(circle
-					(center 0 -2.54)
-					(radius 0.635)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.5334 -2.2098) (xy 0.3302 -3.048)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.5334 0.3302) (xy 0.3302 -0.508)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.3556 -2.032) (xy 0.508 -2.8702)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.3556 0.508) (xy 0.508 -0.3302)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 0.635)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:C_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -3406,6 +3219,177 @@
 				)
 			)
 		)
+		(symbol "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 16.51 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "Term_PressFit_1x01_5mm_Phoenix_Contact_1751066"
+				(at 16.51 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "1751066"
+				(at 16.51 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.phoenixcontact.com/gb/produkte/1751066"
+				(at 16.51 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "PCB terminal block, nominal current: 24 A, rated voltage (III/2): 400 V, nominal cross section: 2.5 mm?, Number of potentials: 1, Number of rows: 1, Number of positions per row: 1, product range: SPT 2,5/..-H, pitch: 5 mm, connection method: Push-in spring connection, mounting: Wave soldering, conductor/PCB connection direction: 0 ?, color: green, Pin layout: Linear double pinning, Solder pin [P]: 2.5 mm, type of packaging: packed in cardboard"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "14.4"
+				(at 16.51 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Phoenix Contact"
+				(at 16.51 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "1751066"
+				(at 16.51 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" ""
+				(at 16.51 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" ""
+				(at 16.51 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Part Number" ""
+				(at 16.51 -894.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Price/Stock" ""
+				(at 16.51 -994.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "Term_PressFit_1x01_5mm_Phoenix_Contact_1751066_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 15.24 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:+12V"
 			(power)
 			(pin_names
@@ -3750,10 +3734,16 @@
 		(uuid "182b2d54-931d-49d6-9f39-60a752623e36")
 	)
 	(junction
-		(at 163.83 115.57)
+		(at 148.59 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1c4f15f5-8ca6-4016-8da2-518fef142d45")
+	)
+	(junction
+		(at 227.33 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c82ece5-e8b6-4104-8a2e-57618712f4be")
 	)
 	(junction
 		(at 41.91 107.95)
@@ -3762,10 +3752,28 @@
 		(uuid "1fdd90da-358c-4591-9251-902d0c1fe9b7")
 	)
 	(junction
+		(at 229.87 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "28d83f8b-49b6-4060-8e29-21d4dd175f67")
+	)
+	(junction
 		(at 41.91 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3be9b760-12b4-4d87-a24c-2ca197906999")
+	)
+	(junction
+		(at 149.86 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "441f480a-725d-4ebf-a9ea-e310a9405f2f")
+	)
+	(junction
+		(at 229.87 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "59caff24-4547-412f-9935-9231058ccd0f")
 	)
 	(junction
 		(at 41.91 102.87)
@@ -3780,6 +3788,18 @@
 		(uuid "5bcace5d-edd0-4e19-92d0-835e43cf8eb2")
 	)
 	(junction
+		(at 227.33 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5db39deb-f76d-4bc8-bc66-c0308eb1945a")
+	)
+	(junction
+		(at 123.19 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ad532a7-f6c6-4d89-bea2-409b0a7d2849")
+	)
+	(junction
 		(at 41.91 181.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3792,7 +3812,7 @@
 		(uuid "6ec113ca-7d27-4b14-a180-1e5e2fd1c167")
 	)
 	(junction
-		(at 162.56 67.31)
+		(at 146.05 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "857916cf-de0f-4783-8832-15c1b6534d14")
@@ -3804,16 +3824,52 @@
 		(uuid "a27b8d6b-388d-4fda-9b7c-e843567c0aa8")
 	)
 	(junction
+		(at 123.19 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a50a9781-6ad4-45de-b02c-eedae113fd79")
+	)
+	(junction
+		(at 127 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aaa8cbc3-829e-4543-9f9c-825253c06b66")
+	)
+	(junction
+		(at 128.27 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b12b32a9-140d-4e6c-9187-993ee8ffe013")
+	)
+	(junction
+		(at 152.4 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b4f04b3d-784e-43d2-becb-9fa719bb2091")
+	)
+	(junction
 		(at 41.91 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d6d866f1-57f4-4af8-a087-8de987968ad1")
 	)
 	(junction
+		(at 149.86 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d9f0cf42-5194-46c2-a592-613dd23c3bf1")
+	)
+	(junction
 		(at 21.59 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f2293638-643d-4ffb-a78f-1e7221caf30a")
+	)
+	(junction
+		(at 152.4 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fcb8cbf0-bbc6-4f0c-8ed7-e04660d5be4b")
 	)
 	(no_connect
 		(at 53.34 162.56)
@@ -3883,7 +3939,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 123.19) (xy 167.64 123.19)
+			(xy 148.59 161.29) (xy 152.4 161.29)
 		)
 		(stroke
 			(width 0)
@@ -3913,7 +3969,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 104.14) (xy 163.83 107.95)
+			(xy 148.59 135.89) (xy 148.59 139.7)
 		)
 		(stroke
 			(width 0)
@@ -3929,17 +3985,17 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "1163345e-2cb4-480f-bdc8-194fdf8b3208")
+		(uuid "0f0bb1a9-4e51-47cc-9032-0b2af787cfcd")
 	)
 	(wire
 		(pts
-			(xy 125.73 29.21) (xy 125.73 31.75)
+			(xy 227.33 63.5) (xy 227.33 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "13112c70-c1e7-44bb-b279-f00d30baf1c5")
+		(uuid "1163345e-2cb4-480f-bdc8-194fdf8b3208")
 	)
 	(polyline
 		(pts
@@ -3963,7 +4019,17 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 38.1) (xy 120.65 38.1)
+			(xy 128.27 109.22) (xy 128.27 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13e354cc-820c-4696-9c64-870e26381083")
+	)
+	(wire
+		(pts
+			(xy 113.03 38.1) (xy 123.19 38.1)
 		)
 		(stroke
 			(width 0)
@@ -3983,17 +4049,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 120.65) (xy 223.52 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "200dc209-3220-4bc3-9984-3a11a6cf4a73")
-	)
-	(wire
-		(pts
-			(xy 85.09 31.75) (xy 95.25 31.75)
+			(xy 77.47 31.75) (xy 87.63 31.75)
 		)
 		(stroke
 			(width 0)
@@ -4013,6 +4069,16 @@
 	)
 	(wire
 		(pts
+			(xy 223.52 135.89) (xy 223.52 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25012f69-0ab0-4be5-b154-6d18f5e4d099")
+	)
+	(wire
+		(pts
 			(xy 44.45 41.91) (xy 55.88 41.91)
 		)
 		(stroke
@@ -4023,7 +4089,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 34.29) (xy 95.25 34.29)
+			(xy 77.47 34.29) (xy 87.63 34.29)
 		)
 		(stroke
 			(width 0)
@@ -4040,6 +4106,16 @@
 			(type default)
 		)
 		(uuid "2bf6d9e6-1aae-4ba1-9b76-eda4e3727cb2")
+	)
+	(wire
+		(pts
+			(xy 223.52 135.89) (xy 229.87 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c43755e-6e5b-448c-a51f-f7f77b1f8454")
 	)
 	(wire
 		(pts
@@ -4063,7 +4139,27 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 36.83) (xy 95.25 36.83)
+			(xy 152.4 149.86) (xy 152.4 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33e9ef52-7e4f-495c-ad4e-c8d76af9743d")
+	)
+	(wire
+		(pts
+			(xy 149.86 72.39) (xy 149.86 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34a30cd4-e1da-4335-885c-f09f78386cf0")
+	)
+	(wire
+		(pts
+			(xy 77.47 36.83) (xy 87.63 36.83)
 		)
 		(stroke
 			(width 0)
@@ -4073,7 +4169,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 67.31) (xy 162.56 67.31)
+			(xy 133.35 69.85) (xy 146.05 69.85)
 		)
 		(stroke
 			(width 0)
@@ -4113,7 +4209,17 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 27.94) (xy 95.25 27.94)
+			(xy 223.52 120.65) (xy 223.52 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47a35840-9aa8-4c24-93e9-2a128b6f337a")
+	)
+	(wire
+		(pts
+			(xy 77.47 27.94) (xy 87.63 27.94)
 		)
 		(stroke
 			(width 0)
@@ -4130,16 +4236,6 @@
 			(type default)
 		)
 		(uuid "4f2ed5cd-5865-451f-9a5f-5507d1cd8859")
-	)
-	(wire
-		(pts
-			(xy 127 106.68) (xy 121.92 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5041b0fd-c1aa-4caa-bd6a-cdcbb5e26baa")
 	)
 	(wire
 		(pts
@@ -4163,7 +4259,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 77.47) (xy 162.56 74.93)
+			(xy 146.05 86.36) (xy 146.05 83.82)
 		)
 		(stroke
 			(width 0)
@@ -4173,7 +4269,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 44.45) (xy 85.09 40.64)
+			(xy 77.47 44.45) (xy 77.47 40.64)
 		)
 		(stroke
 			(width 0)
@@ -4213,16 +4309,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 31.75) (xy 130.81 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a7839b1-ea84-4c31-9537-9b0add546ee2")
-	)
-	(wire
-		(pts
 			(xy 55.88 39.37) (xy 44.45 39.37)
 		)
 		(stroke
@@ -4230,6 +4316,16 @@
 			(type default)
 		)
 		(uuid "5ca4be1c-537e-4a4a-b344-d0c8ffde8546")
+	)
+	(wire
+		(pts
+			(xy 222.25 49.53) (xy 222.25 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ddd50f8-ac9e-4f5a-b1e2-39f6f9210b23")
 	)
 	(polyline
 		(pts
@@ -4263,7 +4359,17 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 55.88) (xy 162.56 59.69)
+			(xy 127 97.79) (xy 127 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63aec9e5-43ad-46a7-94b0-631ac513505f")
+	)
+	(wire
+		(pts
+			(xy 146.05 58.42) (xy 146.05 62.23)
 		)
 		(stroke
 			(width 0)
@@ -4280,16 +4386,6 @@
 			(type default)
 		)
 		(uuid "6a117816-2ba8-4dc0-a00a-4aefdad871d0")
-	)
-	(wire
-		(pts
-			(xy 121.92 104.14) (xy 127 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b81712d-ec02-4939-a2ff-2203f64c62e8")
 	)
 	(wire
 		(pts
@@ -4323,23 +4419,13 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 24.13) (xy 85.09 27.94)
+			(xy 77.47 24.13) (xy 77.47 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "71c3ed2f-b38f-4e04-bad3-e5b5ecbb076d")
-	)
-	(wire
-		(pts
-			(xy 125.73 34.29) (xy 125.73 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "73068e3f-2445-47ee-961c-3585523d3537")
 	)
 	(wire
 		(pts
@@ -4350,6 +4436,16 @@
 			(type default)
 		)
 		(uuid "759d2e80-6239-4ff9-9e67-866c7d0e364f")
+	)
+	(wire
+		(pts
+			(xy 152.4 161.29) (xy 152.4 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "767cb703-fd53-4b18-b35a-8890ed9c043b")
 	)
 	(wire
 		(pts
@@ -4373,16 +4469,6 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 49.53) (xy 222.25 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78f077f8-082a-40ea-911a-b75b75ece6d2")
-	)
-	(wire
-		(pts
 			(xy 35.56 31.75) (xy 55.88 31.75)
 		)
 		(stroke
@@ -4390,6 +4476,16 @@
 			(type default)
 		)
 		(uuid "7cee474b-af8f-4832-b07a-c43c1ab0b464")
+	)
+	(wire
+		(pts
+			(xy 222.25 63.5) (xy 227.33 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d2af869-29a2-486e-9662-7355f3d5e201")
 	)
 	(wire
 		(pts
@@ -4403,7 +4499,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 100.33) (xy 121.92 100.33)
+			(xy 119.38 100.33) (xy 127 100.33)
 		)
 		(stroke
 			(width 0)
@@ -4483,13 +4579,13 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 106.68) (xy 121.92 109.22)
+			(xy 123.19 38.1) (xy 123.19 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "90671efb-5ba8-493c-bf0c-04ca2cd00c63")
+		(uuid "8dc3c4a8-e2a6-4aca-934f-cb9bfe7088c0")
 	)
 	(wire
 		(pts
@@ -4533,16 +4629,6 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 100.33) (xy 121.92 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0a4d166-bc1e-4d69-a265-ce85950e705c")
-	)
-	(wire
-		(pts
 			(xy 54.61 26.67) (xy 55.88 26.67)
 		)
 		(stroke
@@ -4583,7 +4669,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 120.65) (xy 163.83 120.65)
+			(xy 152.4 152.4) (xy 148.59 152.4)
 		)
 		(stroke
 			(width 0)
@@ -4603,23 +4689,13 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 34.29) (xy 125.73 34.29)
+			(xy 223.52 130.81) (xy 229.87 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a8c2756d-e0a6-4905-8ee2-0248ec350faf")
-	)
-	(wire
-		(pts
-			(xy 223.52 134.62) (xy 223.52 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa53d0f2-3870-46b4-8d38-36201eafc26a")
+		(uuid "adf88660-fce1-4c80-9d8d-3ab5d051be2e")
 	)
 	(wire
 		(pts
@@ -4633,7 +4709,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 125.73) (xy 163.83 123.19)
+			(xy 148.59 163.83) (xy 148.59 161.29)
 		)
 		(stroke
 			(width 0)
@@ -4643,7 +4719,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 72.39) (xy 162.56 72.39)
+			(xy 149.86 74.93) (xy 146.05 74.93)
 		)
 		(stroke
 			(width 0)
@@ -4673,7 +4749,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 115.57) (xy 163.83 120.65)
+			(xy 148.59 147.32) (xy 148.59 152.4)
 		)
 		(stroke
 			(width 0)
@@ -4703,13 +4779,23 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 115.57) (xy 163.83 115.57)
+			(xy 135.89 147.32) (xy 148.59 147.32)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "be08de33-37ae-415e-ba04-5282d0b6f3f0")
+	)
+	(wire
+		(pts
+			(xy 149.86 83.82) (xy 149.86 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfa5a226-a5d7-42eb-a89a-7728e909dc35")
 	)
 	(wire
 		(pts
@@ -4743,7 +4829,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 109.22) (xy 119.38 109.22)
+			(xy 119.38 109.22) (xy 128.27 109.22)
 		)
 		(stroke
 			(width 0)
@@ -4753,7 +4839,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 29.21) (xy 125.73 29.21)
+			(xy 113.03 29.21) (xy 123.19 29.21)
 		)
 		(stroke
 			(width 0)
@@ -4793,6 +4879,26 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 135.89) (xy 229.87 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce645b8e-f35d-4c98-a2b8-098e57ae6791")
+	)
+	(wire
+		(pts
+			(xy 229.87 130.81) (xy 229.87 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d33fbd67-625d-4829-8002-ec348bd37009")
+	)
+	(wire
+		(pts
 			(xy 16.51 147.32) (xy 27.94 147.32)
 		)
 		(stroke
@@ -4823,7 +4929,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 67.31) (xy 162.56 72.39)
+			(xy 146.05 69.85) (xy 146.05 74.93)
 		)
 		(stroke
 			(width 0)
@@ -4853,6 +4959,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 58.42) (xy 227.33 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4be7598-0f46-4aea-a607-c738d6e64544")
+	)
+	(wire
+		(pts
 			(xy 222.25 86.36) (xy 222.25 81.28)
 		)
 		(stroke
@@ -4870,6 +4986,16 @@
 			(type default)
 		)
 		(uuid "e8c50f1b-c316-4110-9cce-5c24c65a1eaa")
+	)
+	(wire
+		(pts
+			(xy 227.33 58.42) (xy 222.25 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea7c77b5-1946-4f91-8833-2ec75af09450")
 	)
 	(wire
 		(pts
@@ -4893,7 +5019,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 74.93) (xy 166.37 74.93)
+			(xy 146.05 83.82) (xy 149.86 83.82)
 		)
 		(stroke
 			(width 0)
@@ -4913,6 +5039,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 26.67) (xy 123.19 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f300bb57-f3d9-4e8c-a309-a6d8d5b29258")
+	)
+	(wire
+		(pts
 			(xy 35.56 41.91) (xy 35.56 31.75)
 		)
 		(stroke
@@ -4923,7 +5059,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 40.64) (xy 95.25 40.64)
+			(xy 77.47 40.64) (xy 87.63 40.64)
 		)
 		(stroke
 			(width 0)
@@ -5046,7 +5182,7 @@
 		(uuid "0aaf27e5-8afb-49cf-b3b7-f0453392482a")
 	)
 	(label "TMSTR2"
-		(at 151.13 115.57 0)
+		(at 135.89 147.32 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5145,7 +5281,7 @@
 		(uuid "27ee22ac-9044-4be1-b7f6-e0502a52f1bc")
 	)
 	(label "TMSTR1"
-		(at 149.86 67.31 0)
+		(at 133.35 69.85 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5156,7 +5292,7 @@
 		(uuid "359a238f-7b9c-4df3-9483-3c4292fe63a9")
 	)
 	(label "DATA"
-		(at 85.09 31.75 0)
+		(at 77.47 31.75 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5178,7 +5314,7 @@
 		(uuid "4780a290-d25c-4459-9579-eba3f7678762")
 	)
 	(label "CLK"
-		(at 85.09 34.29 0)
+		(at 77.47 34.29 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5222,7 +5358,7 @@
 		(uuid "7d928d56-093a-4ca8-aed1-414b7e703b45")
 	)
 	(label "SS1"
-		(at 85.09 36.83 0)
+		(at 77.47 36.83 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6385,77 +6521,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 172.72 120.65 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0545bd63-829a-4265-9c59-14dc4bc774f7")
-		(property "Reference" "J6"
-			(at 174.752 120.8532 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Screw_Terminal_01x02"
-			(at 174.752 123.1646 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal"
-			(at 172.72 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 172.72 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 172.72 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b3f0e57a-ca8b-47be-abd1-d58f8d3dbe31")
-		)
-		(pin "1"
-			(uuid "d7b01b34-45fd-4e62-b132-afddded5545a")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "J6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "BREAD_Slice-rescue:GND-power")
-		(at 162.56 77.47 0)
+		(at 146.05 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6463,7 +6530,7 @@
 		(dnp no)
 		(uuid "0ceae7a8-e86a-4bf9-8d8e-dc092de731a7")
 		(property "Reference" "#PWR019"
-			(at 162.56 83.82 0)
+			(at 146.05 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6472,7 +6539,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 162.687 81.8642 0)
+			(at 146.177 90.7542 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6480,7 +6547,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 162.56 77.47 0)
+			(at 146.05 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6489,7 +6556,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 162.56 77.47 0)
+			(at 146.05 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6498,7 +6565,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 162.56 77.47 0)
+			(at 146.05 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6519,17 +6586,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 132.08 106.68 0)
-		(mirror x)
+		(lib_id "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066")
+		(at 149.86 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1717436f-9470-416c-b2d5-deba36c429b6")
-		(property "Reference" "J3"
-			(at 134.112 106.4768 0)
+		(uuid "225bc8cb-f566-4510-9c79-e08545988f90")
+		(property "Reference" "J8"
+			(at 166.37 83.8199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6537,8 +6603,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x02"
-			(at 134.112 104.1654 0)
+		(property "Value" "Term_PressFit_1x01_5mm_Phoenix_Contact_1751066"
+			(at 157.48 90.678 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6546,8 +6612,28 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal"
-			(at 132.08 106.68 0)
+		(property "Footprint" "1751066"
+			(at 166.37 178.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.phoenixcontact.com/gb/produkte/1751066"
+			(at 166.37 278.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "PCB terminal block, nominal current: 24 A, rated voltage (III/2): 400 V, nominal cross section: 2.5 mm?, Number of potentials: 1, Number of rows: 1, Number of positions per row: 1, product range: SPT 2,5/..-H, pitch: 5 mm, connection method: Push-in spring connection, mounting: Wave soldering, conductor/PCB connection direction: 0 ?, color: green, Pin layout: Linear double pinning, Solder pin [P]: 2.5 mm, type of packaging: packed in cardboard"
+			(at 149.86 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6555,34 +6641,86 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 132.08 106.68 0)
+		(property "Height" "14.4"
+			(at 166.37 478.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 132.08 106.68 0)
+		(property "Manufacturer_Name" "Phoenix Contact"
+			(at 166.37 578.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "1751066"
+			(at 166.37 678.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 166.37 778.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 166.37 878.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 166.37 978.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 166.37 1078.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
 				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "c1b5124d-979a-4583-9261-be06e829cd09")
+			(uuid "d3da6382-82dc-4fd3-bd71-742b018e1b1c")
 		)
 		(pin "2"
-			(uuid "590fa11e-3120-4a50-9356-b52e5769d57c")
+			(uuid "7aea7511-9b7f-4754-a7d7-42df2592e309")
 		)
 		(instances
 			(project "BREAD_Slice"
 				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "J3")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -6731,6 +6869,148 @@
 			(project "Ingredients"
 				(path "/f365b6a7-e6ac-433f-bafa-d173330fa0b6"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066")
+		(at 227.33 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "27cf565d-609d-4e2a-adca-701ff64302c2")
+		(property "Reference" "J12"
+			(at 243.84 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Term_PressFit_1x01_5mm_Phoenix_Contact_1751066"
+			(at 243.84 66.0399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "1751066"
+			(at 243.84 158.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.phoenixcontact.com/gb/produkte/1751066"
+			(at 243.84 258.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "PCB terminal block, nominal current: 24 A, rated voltage (III/2): 400 V, nominal cross section: 2.5 mm?, Number of potentials: 1, Number of rows: 1, Number of positions per row: 1, product range: SPT 2,5/..-H, pitch: 5 mm, connection method: Push-in spring connection, mounting: Wave soldering, conductor/PCB connection direction: 0 ?, color: green, Pin layout: Linear double pinning, Solder pin [P]: 2.5 mm, type of packaging: packed in cardboard"
+			(at 227.33 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "14.4"
+			(at 243.84 458.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Phoenix Contact"
+			(at 243.84 558.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "1751066"
+			(at 243.84 658.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 243.84 758.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 243.84 858.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 243.84 958.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 243.84 1058.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0c1b6a04-e1ad-417f-a387-3afa47b6ad3b")
+		)
+		(pin "2"
+			(uuid "40c99540-18a9-4993-8f47-dd34b2c7b231")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687"
+					(reference "J12")
 					(unit 1)
 				)
 			)
@@ -6888,6 +7168,573 @@
 		)
 	)
 	(symbol
+		(lib_id "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066")
+		(at 127 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "36453d51-7ba2-4b20-9252-d9d9f6948dd4")
+		(property "Reference" "J5"
+			(at 143.51 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Term_PressFit_1x01_5mm_Phoenix_Contact_1751066"
+			(at 143.51 100.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "1751066"
+			(at 143.51 192.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.phoenixcontact.com/gb/produkte/1751066"
+			(at 143.51 292.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "PCB terminal block, nominal current: 24 A, rated voltage (III/2): 400 V, nominal cross section: 2.5 mm?, Number of potentials: 1, Number of rows: 1, Number of positions per row: 1, product range: SPT 2,5/..-H, pitch: 5 mm, connection method: Push-in spring connection, mounting: Wave soldering, conductor/PCB connection direction: 0 ?, color: green, Pin layout: Linear double pinning, Solder pin [P]: 2.5 mm, type of packaging: packed in cardboard"
+			(at 127 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "14.4"
+			(at 143.51 492.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Phoenix Contact"
+			(at 143.51 592.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "1751066"
+			(at 143.51 692.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 143.51 792.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 143.51 892.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 143.51 992.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 143.51 1092.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1a37d1c4-6af7-4faa-a177-55f68a64b176")
+		)
+		(pin "2"
+			(uuid "37e30495-dca4-400f-8b6c-a5438af43ca5")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066")
+		(at 149.86 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3c1b1982-7a7a-40b3-8dfb-103cf30e406f")
+		(property "Reference" "J7"
+			(at 166.37 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Term_PressFit_1x01_5mm_Phoenix_Contact_1751066"
+			(at 157.48 79.248 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "1751066"
+			(at 166.37 167.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.phoenixcontact.com/gb/produkte/1751066"
+			(at 166.37 267.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "PCB terminal block, nominal current: 24 A, rated voltage (III/2): 400 V, nominal cross section: 2.5 mm?, Number of potentials: 1, Number of rows: 1, Number of positions per row: 1, product range: SPT 2,5/..-H, pitch: 5 mm, connection method: Push-in spring connection, mounting: Wave soldering, conductor/PCB connection direction: 0 ?, color: green, Pin layout: Linear double pinning, Solder pin [P]: 2.5 mm, type of packaging: packed in cardboard"
+			(at 149.86 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "14.4"
+			(at 166.37 467.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Phoenix Contact"
+			(at 166.37 567.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "1751066"
+			(at 166.37 667.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 166.37 767.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 166.37 867.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 166.37 967.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 166.37 1067.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8d88575e-b815-4469-93cb-17f60e34449e")
+		)
+		(pin "2"
+			(uuid "b594af73-10d1-4296-aa0a-608b1519b10e")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066")
+		(at 123.19 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3e1b6092-9226-4aca-9e78-71a63d10a336")
+		(property "Reference" "J4"
+			(at 139.7 38.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Term_PressFit_1x01_5mm_Phoenix_Contact_1751066"
+			(at 139.7 40.6399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "1751066"
+			(at 139.7 133.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.phoenixcontact.com/gb/produkte/1751066"
+			(at 139.7 233.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "PCB terminal block, nominal current: 24 A, rated voltage (III/2): 400 V, nominal cross section: 2.5 mm?, Number of potentials: 1, Number of rows: 1, Number of positions per row: 1, product range: SPT 2,5/..-H, pitch: 5 mm, connection method: Push-in spring connection, mounting: Wave soldering, conductor/PCB connection direction: 0 ?, color: green, Pin layout: Linear double pinning, Solder pin [P]: 2.5 mm, type of packaging: packed in cardboard"
+			(at 123.19 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "14.4"
+			(at 139.7 433.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Phoenix Contact"
+			(at 139.7 533.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "1751066"
+			(at 139.7 633.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 139.7 733.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 139.7 833.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 139.7 933.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 139.7 1033.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "94c4c369-0cce-45af-8358-ccb5f9f5365e")
+		)
+		(pin "2"
+			(uuid "99c2606a-1b92-4f69-90c4-7966a710937b")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066")
+		(at 229.87 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4243f4d6-2336-44ce-ba9c-518b38e4adc6")
+		(property "Reference" "J13"
+			(at 246.38 128.2699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Term_PressFit_1x01_5mm_Phoenix_Contact_1751066"
+			(at 246.38 130.8099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "1751066"
+			(at 246.38 223.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.phoenixcontact.com/gb/produkte/1751066"
+			(at 246.38 323.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "PCB terminal block, nominal current: 24 A, rated voltage (III/2): 400 V, nominal cross section: 2.5 mm?, Number of potentials: 1, Number of rows: 1, Number of positions per row: 1, product range: SPT 2,5/..-H, pitch: 5 mm, connection method: Push-in spring connection, mounting: Wave soldering, conductor/PCB connection direction: 0 ?, color: green, Pin layout: Linear double pinning, Solder pin [P]: 2.5 mm, type of packaging: packed in cardboard"
+			(at 229.87 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "14.4"
+			(at 246.38 523.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Phoenix Contact"
+			(at 246.38 623.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "1751066"
+			(at 246.38 723.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 246.38 823.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 246.38 923.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 246.38 1023.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 246.38 1123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1964aefd-917f-4cea-92ec-5fdc9698d19a")
+		)
+		(pin "2"
+			(uuid "5366ae05-1cea-4404-9e7e-81302dfe91c6")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687"
+					(reference "J13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SparkFun-DiscreteSemi:AP63205")
 		(at 31.75 96.52 0)
 		(unit 1)
@@ -6968,146 +7815,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 227.33 60.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "50ccf8b4-1e19-49fb-b52d-84ef96afd16c")
-		(property "Reference" "J7"
-			(at 229.362 61.1632 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Screw_Terminal_01x02"
-			(at 229.362 63.4746 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
-			(at 227.33 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 227.33 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 227.33 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6ee83821-cb40-488d-a9ef-5528ec1712c4")
-		)
-		(pin "2"
-			(uuid "67cdceef-a834-4a65-9481-b7c5cd53beda")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 228.6 132.08 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5ae747a9-0ddd-4811-a117-c5a5a117a213")
-		(property "Reference" "J8"
-			(at 230.632 132.2832 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Screw_Terminal_01x02"
-			(at 230.632 134.5946 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
-			(at 228.6 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 228.6 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 228.6 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1f15e503-0fc4-4554-bc79-5b0337708cf1")
-		)
-		(pin "2"
-			(uuid "564e9ba7-9143-4aba-8791-1788fff09060")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "J8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
-		(at 162.56 63.5 0)
+		(at 146.05 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7115,7 +7824,7 @@
 		(dnp no)
 		(uuid "6206adf7-6c4f-40c7-b67e-be229c00094e")
 		(property "Reference" "R1"
-			(at 164.2872 62.3316 0)
+			(at 147.7772 64.8716 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7124,7 +7833,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 164.2872 64.643 0)
+			(at 147.7772 67.183 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7133,7 +7842,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 163.576 63.754 90)
+			(at 147.066 66.294 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7142,7 +7851,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 162.56 63.5 0)
+			(at 146.05 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7151,7 +7860,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 162.56 63.5 0)
+			(at 146.05 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7183,7 +7892,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "63ca7c3f-1277-4bf3-b5fe-019ef7b70a53")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR017"
 			(at 83.82 120.65 0)
 			(effects
 				(font
@@ -7233,7 +7942,7 @@
 		(instances
 			(project "BREAD_Slice"
 				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "#PWR015")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -7306,7 +8015,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 163.83 111.76 0)
+		(at 148.59 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7314,7 +8023,7 @@
 		(dnp no)
 		(uuid "7ffbb093-320f-4e64-9b0c-d7f1e3b7aada")
 		(property "Reference" "R2"
-			(at 165.5572 110.5916 0)
+			(at 150.3172 142.3416 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7323,7 +8032,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 165.5572 112.903 0)
+			(at 150.3172 144.653 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7332,7 +8041,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 164.846 112.014 90)
+			(at 149.606 143.764 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7341,7 +8050,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 163.83 111.76 0)
+			(at 148.59 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7350,7 +8059,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 163.83 111.76 0)
+			(at 148.59 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7598,7 +8307,7 @@
 	)
 	(symbol
 		(lib_id "BREAD_Slice-rescue:GND-power")
-		(at 163.83 125.73 0)
+		(at 148.59 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7606,7 +8315,7 @@
 		(dnp no)
 		(uuid "8abb5fa1-739b-4ce1-ba9d-67bcc29ae248")
 		(property "Reference" "#PWR021"
-			(at 163.83 132.08 0)
+			(at 148.59 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7615,7 +8324,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 163.957 130.1242 0)
+			(at 148.717 168.2242 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7623,7 +8332,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 125.73 0)
+			(at 148.59 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7632,7 +8341,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 125.73 0)
+			(at 148.59 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7641,7 +8350,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 163.83 125.73 0)
+			(at 148.59 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7663,15 +8372,15 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 85.09 24.13 0)
+		(at 77.47 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "a03fef8b-90eb-4e8f-a0c3-b5d53069e0d6")
-		(property "Reference" "#PWR016"
-			(at 85.09 27.94 0)
+		(property "Reference" "#PWR014"
+			(at 77.47 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7680,7 +8389,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 85.471 19.7358 0)
+			(at 77.851 19.7358 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7688,7 +8397,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 85.09 24.13 0)
+			(at 77.47 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7697,7 +8406,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 24.13 0)
+			(at 77.47 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7706,7 +8415,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 85.09 24.13 0)
+			(at 77.47 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7720,7 +8429,7 @@
 		(instances
 			(project "BREAD_Slice"
 				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "#PWR016")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -8016,7 +8725,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 163.83 104.14 0)
+		(at 148.59 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8024,7 +8733,7 @@
 		(dnp no)
 		(uuid "b5de32db-1a70-4fa7-99ce-e0f22d5e06b1")
 		(property "Reference" "#PWR020"
-			(at 163.83 107.95 0)
+			(at 148.59 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8033,7 +8742,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 164.211 99.7458 0)
+			(at 148.971 131.4958 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8041,7 +8750,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 104.14 0)
+			(at 148.59 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8050,7 +8759,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 104.14 0)
+			(at 148.59 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8059,7 +8768,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 163.83 104.14 0)
+			(at 148.59 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8153,15 +8862,15 @@
 	)
 	(symbol
 		(lib_id "BREAD_Slice-rescue:GND-power")
-		(at 85.09 44.45 0)
+		(at 77.47 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "b88cadbd-f6b8-408f-9326-5c3bb73962b3")
-		(property "Reference" "#PWR017"
-			(at 85.09 50.8 0)
+		(property "Reference" "#PWR015"
+			(at 77.47 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8170,7 +8879,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 85.217 48.8442 0)
+			(at 77.597 48.8442 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8178,7 +8887,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 85.09 44.45 0)
+			(at 77.47 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8187,7 +8896,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 44.45 0)
+			(at 77.47 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8196,7 +8905,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 85.09 44.45 0)
+			(at 77.47 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8210,7 +8919,7 @@
 		(instances
 			(project "BREAD_Slice"
 				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "#PWR017")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -8301,7 +9010,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "be2fcc28-9350-4260-8319-d1d20b102998")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR016"
 			(at 83.82 97.79 0)
 			(effects
 				(font
@@ -8351,7 +9060,149 @@
 		(instances
 			(project "BREAD_Slice"
 				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "#PWR014")
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066")
+		(at 128.27 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be613344-ce58-4288-8dbc-f4f0dfeaa3a4")
+		(property "Reference" "J6"
+			(at 144.78 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Term_PressFit_1x01_5mm_Phoenix_Contact_1751066"
+			(at 144.78 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "1751066"
+			(at 144.78 204.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.phoenixcontact.com/gb/produkte/1751066"
+			(at 144.78 304.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "PCB terminal block, nominal current: 24 A, rated voltage (III/2): 400 V, nominal cross section: 2.5 mm?, Number of potentials: 1, Number of rows: 1, Number of positions per row: 1, product range: SPT 2,5/..-H, pitch: 5 mm, connection method: Push-in spring connection, mounting: Wave soldering, conductor/PCB connection direction: 0 ?, color: green, Pin layout: Linear double pinning, Solder pin [P]: 2.5 mm, type of packaging: packed in cardboard"
+			(at 128.27 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "14.4"
+			(at 144.78 504.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Phoenix Contact"
+			(at 144.78 604.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "1751066"
+			(at 144.78 704.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 144.78 804.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 144.78 904.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 144.78 1004.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 144.78 1104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b2f63449-59fe-4169-9519-011efa85bf16")
+		)
+		(pin "2"
+			(uuid "de0e1f8b-0767-459d-a835-4f5e14287589")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687"
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -8417,75 +9268,6 @@
 			(project "BREAD_Slice"
 				(path "/66043bca-a260-4915-9fce-8a51d324c687"
 					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 171.45 72.39 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d31ecbb2-46d5-4881-83b0-c2aac64d91af")
-		(property "Reference" "J5"
-			(at 173.482 72.5932 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Screw_Terminal_01x02"
-			(at 173.482 74.9046 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal"
-			(at 171.45 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 171.45 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 171.45 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "775dd79a-c2ad-4182-95b1-7afa5e945179")
-		)
-		(pin "1"
-			(uuid "2ae7d3f1-ac7b-495f-b9dc-f19ff927ee7b")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -8629,6 +9411,148 @@
 		)
 	)
 	(symbol
+		(lib_id "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066")
+		(at 123.19 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d5568c81-da69-4f3e-b52b-2c1b383565fd")
+		(property "Reference" "J3"
+			(at 139.7 26.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Term_PressFit_1x01_5mm_Phoenix_Contact_1751066"
+			(at 139.7 29.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "1751066"
+			(at 139.7 121.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.phoenixcontact.com/gb/produkte/1751066"
+			(at 139.7 221.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "PCB terminal block, nominal current: 24 A, rated voltage (III/2): 400 V, nominal cross section: 2.5 mm?, Number of potentials: 1, Number of rows: 1, Number of positions per row: 1, product range: SPT 2,5/..-H, pitch: 5 mm, connection method: Push-in spring connection, mounting: Wave soldering, conductor/PCB connection direction: 0 ?, color: green, Pin layout: Linear double pinning, Solder pin [P]: 2.5 mm, type of packaging: packed in cardboard"
+			(at 123.19 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "14.4"
+			(at 139.7 421.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Phoenix Contact"
+			(at 139.7 521.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "1751066"
+			(at 139.7 621.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 139.7 721.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 139.7 821.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 139.7 921.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 139.7 1021.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "57c1d799-07cf-4f57-bfd4-68449230a7db")
+		)
+		(pin "2"
+			(uuid "fbf48335-17bb-4f92-a787-6e33e4bd07fe")
+		)
+		(instances
+			(project ""
+				(path "/66043bca-a260-4915-9fce-8a51d324c687"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SparkFun-LED:WS2812B_5050")
 		(at 48.26 68.58 0)
 		(unit 1)
@@ -8698,6 +9622,148 @@
 			(project "BREAD_Slice"
 				(path "/66043bca-a260-4915-9fce-8a51d324c687"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066")
+		(at 152.4 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e1b3e0b5-f54d-4e18-9fe0-03ae2182f0a9")
+		(property "Reference" "J10"
+			(at 168.91 161.2899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Term_PressFit_1x01_5mm_Phoenix_Contact_1751066"
+			(at 168.91 163.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "1751066"
+			(at 168.91 256.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.phoenixcontact.com/gb/produkte/1751066"
+			(at 168.91 356.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "PCB terminal block, nominal current: 24 A, rated voltage (III/2): 400 V, nominal cross section: 2.5 mm?, Number of potentials: 1, Number of rows: 1, Number of positions per row: 1, product range: SPT 2,5/..-H, pitch: 5 mm, connection method: Push-in spring connection, mounting: Wave soldering, conductor/PCB connection direction: 0 ?, color: green, Pin layout: Linear double pinning, Solder pin [P]: 2.5 mm, type of packaging: packed in cardboard"
+			(at 152.4 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "14.4"
+			(at 168.91 556.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Phoenix Contact"
+			(at 168.91 656.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "1751066"
+			(at 168.91 756.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 168.91 856.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 168.91 956.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 168.91 1056.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 168.91 1156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5495c4dd-c840-4138-8679-42c8f90c39c6")
+		)
+		(pin "2"
+			(uuid "96017b5a-ee0c-4257-99c6-a4ae0957af78")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687"
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -8774,6 +9840,290 @@
 			(project "Ingredients"
 				(path "/f365b6a7-e6ac-433f-bafa-d173330fa0b6"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066")
+		(at 229.87 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e6a08eb9-7994-4e96-91a1-947a528fcbb7")
+		(property "Reference" "J14"
+			(at 246.38 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Term_PressFit_1x01_5mm_Phoenix_Contact_1751066"
+			(at 246.38 138.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "1751066"
+			(at 246.38 230.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.phoenixcontact.com/gb/produkte/1751066"
+			(at 246.38 330.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "PCB terminal block, nominal current: 24 A, rated voltage (III/2): 400 V, nominal cross section: 2.5 mm?, Number of potentials: 1, Number of rows: 1, Number of positions per row: 1, product range: SPT 2,5/..-H, pitch: 5 mm, connection method: Push-in spring connection, mounting: Wave soldering, conductor/PCB connection direction: 0 ?, color: green, Pin layout: Linear double pinning, Solder pin [P]: 2.5 mm, type of packaging: packed in cardboard"
+			(at 229.87 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "14.4"
+			(at 246.38 530.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Phoenix Contact"
+			(at 246.38 630.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "1751066"
+			(at 246.38 730.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 246.38 830.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 246.38 930.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 246.38 1030.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 246.38 1130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "949791a6-463f-4ff8-8cf0-0fbee4fe4509")
+		)
+		(pin "2"
+			(uuid "00fbd7dc-12e8-40eb-99c8-e268055ccaf1")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687"
+					(reference "J14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066")
+		(at 152.4 149.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e7ca1663-ad23-4431-9ba4-4dfba3912482")
+		(property "Reference" "J9"
+			(at 168.91 149.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Term_PressFit_1x01_5mm_Phoenix_Contact_1751066"
+			(at 168.91 152.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "1751066"
+			(at 168.91 244.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.phoenixcontact.com/gb/produkte/1751066"
+			(at 168.91 344.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "PCB terminal block, nominal current: 24 A, rated voltage (III/2): 400 V, nominal cross section: 2.5 mm?, Number of potentials: 1, Number of rows: 1, Number of positions per row: 1, product range: SPT 2,5/..-H, pitch: 5 mm, connection method: Push-in spring connection, mounting: Wave soldering, conductor/PCB connection direction: 0 ?, color: green, Pin layout: Linear double pinning, Solder pin [P]: 2.5 mm, type of packaging: packed in cardboard"
+			(at 152.4 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "14.4"
+			(at 168.91 544.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Phoenix Contact"
+			(at 168.91 644.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "1751066"
+			(at 168.91 744.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 168.91 844.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 168.91 944.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 168.91 1044.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 168.91 1144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "edbe259e-6690-45a4-be80-7434801978a0")
+		)
+		(pin "2"
+			(uuid "db8d1829-c347-424c-a5ec-bb13e5ceb667")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687"
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -8910,8 +10260,150 @@
 		)
 	)
 	(symbol
+		(lib_id "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066")
+		(at 227.33 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f2e556ca-477f-421e-b872-c714f5fcb435")
+		(property "Reference" "J11"
+			(at 243.84 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Term_PressFit_1x01_5mm_Phoenix_Contact_1751066"
+			(at 243.84 58.4199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "1751066"
+			(at 243.84 150.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.phoenixcontact.com/gb/produkte/1751066"
+			(at 243.84 250.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "PCB terminal block, nominal current: 24 A, rated voltage (III/2): 400 V, nominal cross section: 2.5 mm?, Number of potentials: 1, Number of rows: 1, Number of positions per row: 1, product range: SPT 2,5/..-H, pitch: 5 mm, connection method: Push-in spring connection, mounting: Wave soldering, conductor/PCB connection direction: 0 ?, color: green, Pin layout: Linear double pinning, Solder pin [P]: 2.5 mm, type of packaging: packed in cardboard"
+			(at 227.33 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "14.4"
+			(at 243.84 450.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Phoenix Contact"
+			(at 243.84 550.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "1751066"
+			(at 243.84 650.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 243.84 750.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 243.84 850.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 243.84 950.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 243.84 1050.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fb8401d9-fe48-467a-8c79-53271eea00fd")
+		)
+		(pin "2"
+			(uuid "5337b689-db84-48d0-a1ca-83108440ea6e")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687"
+					(reference "J11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
-		(at 162.56 55.88 0)
+		(at 146.05 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8919,7 +10411,7 @@
 		(dnp no)
 		(uuid "fad77452-adc5-4d17-99a0-47bef05e4a19")
 		(property "Reference" "#PWR018"
-			(at 162.56 59.69 0)
+			(at 146.05 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8928,7 +10420,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 162.941 51.4858 0)
+			(at 146.431 54.0258 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8936,7 +10428,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 162.56 55.88 0)
+			(at 146.05 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8945,7 +10437,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 162.56 55.88 0)
+			(at 146.05 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8954,7 +10446,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 162.56 55.88 0)
+			(at 146.05 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9045,76 +10537,6 @@
 			(project "BREAD_Slice"
 				(path "/66043bca-a260-4915-9fce-8a51d324c687"
 					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 135.89 34.29 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ff55beb7-1198-4504-a90a-d891e7974c15")
-		(property "Reference" "J4"
-			(at 137.922 34.0868 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Screw_Terminal_01x02"
-			(at 137.922 31.7754 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal"
-			(at 135.89 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c8f955ef-8e89-4084-8144-a591c598ac87")
-		)
-		(pin "2"
-			(uuid "99e74de3-8d24-4cbd-993d-f1a4e1a504bc")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -9229,7 +10651,7 @@
 		)
 	)
 	(sheet
-		(at 95.25 24.13)
+		(at 87.63 24.13)
 		(size 25.4 20.32)
 		(fields_autoplaced yes)
 		(stroke
@@ -9241,7 +10663,7 @@
 		)
 		(uuid "be5e51a3-eaec-485c-861e-c31f2b14404a")
 		(property "Sheetname" "MAX31855K"
-			(at 95.25 23.4184 0)
+			(at 87.63 23.4184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9250,7 +10672,7 @@
 			)
 		)
 		(property "Sheetfile" "max31855k.kicad_sch"
-			(at 95.25 45.0346 0)
+			(at 87.63 45.0346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9259,7 +10681,7 @@
 			)
 		)
 		(pin "DATA" input
-			(at 95.25 31.75 180)
+			(at 87.63 31.75 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9269,7 +10691,7 @@
 			(uuid "c2457195-8997-4339-8342-cbe478c9ef5c")
 		)
 		(pin "CLK" input
-			(at 95.25 34.29 180)
+			(at 87.63 34.29 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9279,7 +10701,7 @@
 			(uuid "fbf57f94-e009-4049-b4e7-fd682c89dd0f")
 		)
 		(pin "GND" input
-			(at 95.25 40.64 180)
+			(at 87.63 40.64 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9289,7 +10711,7 @@
 			(uuid "97948daa-18c9-4a7a-b0c2-ae98c103949a")
 		)
 		(pin "SS" input
-			(at 95.25 36.83 180)
+			(at 87.63 36.83 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9299,7 +10721,7 @@
 			(uuid "69e44b29-04d4-4094-808a-cc4ac6f595de")
 		)
 		(pin "5V" input
-			(at 95.25 27.94 180)
+			(at 87.63 27.94 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9309,7 +10731,7 @@
 			(uuid "a829a23a-04d7-4178-9952-b58416f50d7b")
 		)
 		(pin "T-" input
-			(at 120.65 38.1 0)
+			(at 113.03 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9319,7 +10741,7 @@
 			(uuid "b33d74e8-392c-47fa-a69c-514c0aa5b38d")
 		)
 		(pin "T+" input
-			(at 120.65 29.21 0)
+			(at 113.03 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
