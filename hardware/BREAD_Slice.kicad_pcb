@@ -2583,7 +2583,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "KML-Custom:Thermal Pad"
+	(footprint "KMLib_Mounting:Thermal_Pad"
 		(layer "F.Cu")
 		(uuid "06533ed3-d947-4b21-a38e-31c539335286")
 		(at 131.35 121.355)
@@ -2679,7 +2679,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "KML-Custom:1751066"
+	(footprint "KMLib_Connectors:1751066"
 		(layer "F.Cu")
 		(uuid "0d6c443f-fda6-40b8-acbc-7b70ab5bf5c6")
 		(at 188.03 106.51 90)
@@ -2955,7 +2955,7 @@
 			)
 		)
 	)
-	(footprint "KML-Custom:1751066"
+	(footprint "KMLib_Connectors:1751066"
 		(layer "F.Cu")
 		(uuid "0ee6c77d-869e-4e75-a8f7-e900688a16c0")
 		(at 187.9 70.4 90)
@@ -3231,7 +3231,7 @@
 			)
 		)
 	)
-	(footprint "KML-Custom:1751066"
+	(footprint "KMLib_Connectors:1751066"
 		(layer "F.Cu")
 		(uuid "17da5fc8-f2f2-4804-944f-82d5ad407033")
 		(at 188.03 102.11 90)
@@ -3507,7 +3507,7 @@
 			)
 		)
 	)
-	(footprint "KML-Custom:1751066"
+	(footprint "KMLib_Connectors:1751066"
 		(layer "F.Cu")
 		(uuid "21b82eb6-1157-44b8-ac3e-fd7027f37119")
 		(at 188.03 97.71 90)
@@ -3783,7 +3783,7 @@
 			)
 		)
 	)
-	(footprint "KML-Custom:1751066"
+	(footprint "KMLib_Connectors:1751066"
 		(layer "F.Cu")
 		(uuid "34a833c6-4d83-434f-a114-c0800f674e30")
 		(at 188.03 88.91 90)
@@ -4414,7 +4414,7 @@
 			)
 		)
 	)
-	(footprint "KML-Custom:1751066"
+	(footprint "KMLib_Connectors:1751066"
 		(layer "F.Cu")
 		(uuid "66ff1aa9-1b6c-4068-b793-eb3e72aac322")
 		(at 188.03 93.31 90)
@@ -5155,7 +5155,7 @@
 			)
 		)
 	)
-	(footprint "SparkFun-LED:WS2812-5050-4PIN"
+	(footprint "KMLib_IC_SMD:WS2812-5050-4PIN"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "746fd04f-2e9e-467f-8afd-7b5eb87bd89d")
@@ -5436,7 +5436,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "KML-Custom:1751066"
+	(footprint "KMLib_Connectors:1751066"
 		(layer "F.Cu")
 		(uuid "783ab9d5-adae-43f8-a151-5f9cc514382a")
 		(at 187.9 66 90)
@@ -5712,7 +5712,7 @@
 			)
 		)
 	)
-	(footprint "KML-Custom:1751066"
+	(footprint "KMLib_Connectors:1751066"
 		(layer "F.Cu")
 		(uuid "8216075f-5165-408d-adc4-d4077c39355b")
 		(at 188.03 84.51 90)
@@ -5988,7 +5988,7 @@
 			)
 		)
 	)
-	(footprint "KML-Custom:1751066"
+	(footprint "KMLib_Connectors:1751066"
 		(layer "F.Cu")
 		(uuid "8c451ca9-0809-4aa8-bcb0-033279c43843")
 		(at 188.03 115.31 90)
@@ -6264,7 +6264,7 @@
 			)
 		)
 	)
-	(footprint "KML-Custom:1751066"
+	(footprint "KMLib_Connectors:1751066"
 		(layer "F.Cu")
 		(uuid "90ca331b-c58a-45d4-93b6-7957bed31acd")
 		(at 187.9 57.2 90)
@@ -6540,7 +6540,7 @@
 			)
 		)
 	)
-	(footprint "KML-Custom:1751066"
+	(footprint "KMLib_Connectors:1751066"
 		(layer "F.Cu")
 		(uuid "93c9dffc-f877-4a44-b695-325ef5b2fbb4")
 		(at 188.03 110.91 90)
@@ -7636,7 +7636,7 @@
 			)
 		)
 	)
-	(footprint "KML-Custom:1751066"
+	(footprint "KMLib_Connectors:1751066"
 		(layer "F.Cu")
 		(uuid "ee16400c-9c9c-42ad-b12c-e68f41e42c3d")
 		(at 187.9 61.6 90)
