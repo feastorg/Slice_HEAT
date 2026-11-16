@@ -5,232 +5,6 @@
 	(uuid "66043bca-a260-4915-9fce-8a51d324c687")
 	(paper "A4")
 	(lib_symbols
-		(symbol "BREAD_Slice-rescue:+12V-power"
-			(power global)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "power_+12V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+12V-power_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+12V-power_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(hide yes)
-					(name "+12V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "BREAD_Slice-rescue:GND-power"
-			(power global)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "power_GND"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "GND-power_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND-power_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector:Conn_01x10_Female"
 			(pin_names
 				(offset 1.016)
@@ -2292,7 +2066,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "SparkFun-Connector:I2C_01x04"
+		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -2377,7 +2151,7 @@
 					)
 				)
 			)
-			(symbol "I2C_01x04_1_1"
+			(symbol "Conn_01x04_1_1"
 				(rectangle
 					(start -1.27 3.81)
 					(end 3.81 -6.35)
@@ -3463,7 +3237,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066"
+		(symbol "KMLib_Connectors:1751066_Term_PressFit_1x01_5mm_Phoenix_Contact"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3610,7 +3384,7 @@
 					(justify left top)
 				)
 			)
-			(symbol "Term_PressFit_1x01_5mm_Phoenix_Contact_1751066_1_1"
+			(symbol "1751066_Term_PressFit_1x01_5mm_Phoenix_Contact_1_1"
 				(rectangle
 					(start 5.08 2.54)
 					(end 15.24 -5.08)
@@ -6899,7 +6673,7 @@
 		)
 	)
 	(symbol
-		(lib_id "BREAD_Slice-rescue:GND-power")
+		(lib_id "power:GND")
 		(at 222.25 86.36 0)
 		(unit 1)
 		(body_style 1)
@@ -6976,7 +6750,7 @@
 		)
 	)
 	(symbol
-		(lib_id "BREAD_Slice-rescue:GND-power")
+		(lib_id "power:GND")
 		(at 146.05 86.36 0)
 		(unit 1)
 		(body_style 1)
@@ -7053,7 +6827,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066")
+		(lib_id "KMLib_Connectors:1751066_Term_PressFit_1x01_5mm_Phoenix_Contact")
 		(at 149.86 83.82 0)
 		(unit 1)
 		(body_style 1)
@@ -7392,7 +7166,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066")
+		(lib_id "KMLib_Connectors:1751066_Term_PressFit_1x01_5mm_Phoenix_Contact")
 		(at 227.33 63.5 0)
 		(unit 1)
 		(body_style 1)
@@ -7735,7 +7509,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066")
+		(lib_id "KMLib_Connectors:1751066_Term_PressFit_1x01_5mm_Phoenix_Contact")
 		(at 127 97.79 0)
 		(unit 1)
 		(body_style 1)
@@ -7903,7 +7677,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066")
+		(lib_id "KMLib_Connectors:1751066_Term_PressFit_1x01_5mm_Phoenix_Contact")
 		(at 149.86 72.39 0)
 		(unit 1)
 		(body_style 1)
@@ -8070,7 +7844,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066")
+		(lib_id "KMLib_Connectors:1751066_Term_PressFit_1x01_5mm_Phoenix_Contact")
 		(at 123.19 38.1 0)
 		(unit 1)
 		(body_style 1)
@@ -8238,7 +8012,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066")
+		(lib_id "KMLib_Connectors:1751066_Term_PressFit_1x01_5mm_Phoenix_Contact")
 		(at 229.87 128.27 0)
 		(unit 1)
 		(body_style 1)
@@ -8579,7 +8353,7 @@
 		)
 	)
 	(symbol
-		(lib_id "BREAD_Slice-rescue:GND-power")
+		(lib_id "power:GND")
 		(at 83.82 114.3 0)
 		(unit 1)
 		(body_style 1)
@@ -9073,7 +8847,7 @@
 		)
 	)
 	(symbol
-		(lib_id "BREAD_Slice-rescue:GND-power")
+		(lib_id "power:GND")
 		(at 148.59 163.83 0)
 		(unit 1)
 		(body_style 1)
@@ -9724,7 +9498,7 @@
 		)
 	)
 	(symbol
-		(lib_id "BREAD_Slice-rescue:GND-power")
+		(lib_id "power:GND")
 		(at 77.47 44.45 0)
 		(unit 1)
 		(body_style 1)
@@ -9966,7 +9740,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066")
+		(lib_id "KMLib_Connectors:1751066_Term_PressFit_1x01_5mm_Phoenix_Contact")
 		(at 128.27 109.22 0)
 		(unit 1)
 		(body_style 1)
@@ -10295,7 +10069,7 @@
 		)
 	)
 	(symbol
-		(lib_id "BREAD_Slice-rescue:GND-power")
+		(lib_id "power:GND")
 		(at 223.52 157.48 0)
 		(unit 1)
 		(body_style 1)
@@ -10372,7 +10146,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066")
+		(lib_id "KMLib_Connectors:1751066_Term_PressFit_1x01_5mm_Phoenix_Contact")
 		(at 123.19 26.67 0)
 		(unit 1)
 		(body_style 1)
@@ -10627,7 +10401,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066")
+		(lib_id "KMLib_Connectors:1751066_Term_PressFit_1x01_5mm_Phoenix_Contact")
 		(at 152.4 161.29 0)
 		(unit 1)
 		(body_style 1)
@@ -10883,7 +10657,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066")
+		(lib_id "KMLib_Connectors:1751066_Term_PressFit_1x01_5mm_Phoenix_Contact")
 		(at 229.87 135.89 0)
 		(unit 1)
 		(body_style 1)
@@ -11051,7 +10825,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066")
+		(lib_id "KMLib_Connectors:1751066_Term_PressFit_1x01_5mm_Phoenix_Contact")
 		(at 152.4 149.86 0)
 		(unit 1)
 		(body_style 1)
@@ -11219,7 +10993,7 @@
 		)
 	)
 	(symbol
-		(lib_id "BREAD_Slice-rescue:+12V-power")
+		(lib_id "power:+12V")
 		(at 222.25 35.56 0)
 		(unit 1)
 		(body_style 1)
@@ -11296,7 +11070,7 @@
 		)
 	)
 	(symbol
-		(lib_id "BREAD_Slice-rescue:+12V-power")
+		(lib_id "power:+12V")
 		(at 223.52 106.68 0)
 		(unit 1)
 		(body_style 1)
@@ -11373,7 +11147,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:Term_PressFit_1x01_5mm_Phoenix_Contact_1751066")
+		(lib_id "KMLib_Connectors:1751066_Term_PressFit_1x01_5mm_Phoenix_Contact")
 		(at 227.33 55.88 0)
 		(unit 1)
 		(body_style 1)
@@ -11618,7 +11392,7 @@
 		)
 	)
 	(symbol
-		(lib_id "SparkFun-Connector:I2C_01x04")
+		(lib_id "Connector_Generic:Conn_01x04")
 		(at 33.02 46.99 270)
 		(unit 1)
 		(body_style 1)

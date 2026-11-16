@@ -5,7 +5,7 @@
 	(uuid "fd4e2ead-d03a-4fb3-9c61-bb8bfcbf4b63")
 	(paper "A4")
 	(lib_symbols
-		(symbol "BREAD_Slice-rescue:+5V-power"
+		(symbol "power:+5V"
 			(power global)
 			(pin_names
 				(offset 0)
@@ -69,7 +69,7 @@
 					)
 				)
 			)
-			(symbol "+5V-power_0_1"
+			(symbol "+5V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -107,7 +107,7 @@
 					)
 				)
 			)
-			(symbol "+5V-power_1_1"
+			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -130,7 +130,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "BREAD_Slice-rescue:Ferrite_Bead_Small-Device"
+		(symbol "Device:FerriteBead_Small"
 			(pin_numbers
 				(hide yes)
 			)
@@ -208,7 +208,7 @@
 					)
 				)
 			)
-			(symbol "Ferrite_Bead_Small-Device_0_1"
+			(symbol "FerriteBead_Small_0_1"
 				(polyline
 					(pts
 						(xy -1.8288 0.2794) (xy -1.1176 1.4986) (xy 1.8288 -0.2032) (xy 1.1176 -1.4224) (xy -1.8288 0.2794)
@@ -246,7 +246,7 @@
 					)
 				)
 			)
-			(symbol "Ferrite_Bead_Small-Device_1_1"
+			(symbol "FerriteBead_Small_1_1"
 				(pin passive line
 					(at 0 2.54 270)
 					(length 1.27)
@@ -1302,7 +1302,7 @@
 		)
 	)
 	(symbol
-		(lib_id "BREAD_Slice-rescue:+5V-power")
+		(lib_id "power:+5V")
 		(at 144.78 60.96 0)
 		(mirror y)
 		(unit 1)
@@ -1384,7 +1384,7 @@
 		)
 	)
 	(symbol
-		(lib_id "BREAD_Slice-rescue:Ferrite_Bead_Small-Device")
+		(lib_id "Device:FerriteBead_Small")
 		(at 170.18 63.5 90)
 		(mirror x)
 		(unit 1)
@@ -1726,7 +1726,7 @@
 		)
 	)
 	(symbol
-		(lib_id "BREAD_Slice-rescue:Ferrite_Bead_Small-Device")
+		(lib_id "Device:FerriteBead_Small")
 		(at 170.18 76.2 90)
 		(mirror x)
 		(unit 1)
