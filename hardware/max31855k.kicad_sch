@@ -286,7 +286,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "BREAD_Slice-rescue:MAX31855KASA-Sensor_Temperature"
+		(symbol "Sensor_Temperature:MAX31855KASA"
 			(pin_names
 				(offset 1.016)
 			)
@@ -362,7 +362,7 @@
 					)
 				)
 			)
-			(symbol "MAX31855KASA-Sensor_Temperature_0_1"
+			(symbol "MAX31855KASA_0_1"
 				(rectangle
 					(start -7.62 7.62)
 					(end 7.62 -7.62)
@@ -375,7 +375,7 @@
 					)
 				)
 			)
-			(symbol "MAX31855KASA-Sensor_Temperature_1_1"
+			(symbol "MAX31855KASA_1_1"
 				(pin power_in line
 					(at 0 -10.16 90)
 					(length 2.54)
@@ -1202,7 +1202,7 @@
 		(uuid "e287cb46-85dd-4ab9-87de-37055917b71b")
 	)
 	(symbol
-		(lib_id "BREAD_Slice-rescue:MAX31855KASA-Sensor_Temperature")
+		(lib_id "Sensor_Temperature:MAX31855KASA")
 		(at 144.78 71.12 0)
 		(mirror y)
 		(unit 1)
