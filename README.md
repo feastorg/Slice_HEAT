@@ -5,11 +5,63 @@ DC heating Element Controller Slice for BREAD.
 
 ## Introduction
 
-[Short introduction on the project.]
+Two-channel controller for resistive DC heating elements, with a
+MAX31855K thermocouple input per channel. Each channel has a high-side
+P-channel MOSFET (AOD4185) that is on only while the bus E-stop and the
+Nano's enable are both high, and a low-side N-channel MOSFET (AOD4184A)
+switched by the Nano's PWM. A B340A freewheel diode sits across each
+output.
+
+## Ratings
+
+- Heater supply: 12 V only, on its own terminals J15 (VHTR, +) and
+  J16 (PGND, -), not from the bus. Fit an external 8 A slow-blow fuse
+  in the + lead.
+- Up to 3.5 A per channel, 7 A for both together.
+- Resistive heaters. An inductive load relies on the on-board freewheel
+  diodes (B340A, 3 A) alone.
+- PGND meets the logic ground at one point on the board (NT1).
+
+## Connections
+
+| Terminal | Signal | Use |
+|---|---|---|
+| J11 / J12 | HTR1+ / HTR1- | heater 1 |
+| J13 / J14 | HTR2+ / HTR2- | heater 2 |
+| J15 / J16 | VHTR / PGND | 12 V heater supply in |
+| J3 / J4 | T+ / T- | type K thermocouple, channel 1 (U2) |
+| J5 / J6 | T+ / T- | type K thermocouple, channel 2 (U3) |
+| J7 / J8, J9 / J10 | TMSTR1 / GND, TMSTR2 / GND | thermistor inputs (R1/R2 pull-ups to +5V) |
+
+E-stop: the bus E_STOP line (J2.6) must be high for the heaters to run.
+Unwired, a 1 M pull-down holds it low and the heaters stay off.
+JP1 (BENCH, open by default) pulls the line high through R18 (10 k) for use off
+the loaf; leave it open in a loaf.
+
+## Pin map (Arduino Nano, A1)
+
+| Nano pin | Signal | Function |
+|---|---|---|
+| D11 | PWM1 | heater 1 low-side gate |
+| D10 | PWM2 | heater 2 low-side gate |
+| D12 | HTR_EN | high = high-side switches may turn on |
+| D2 | ESTOP_SNS | buffered E-stop, input (high = run) |
+| D9 | CLK | MAX31855 clock (software SPI, 3.3 V shifted) |
+| D7 | DATA | MAX31855 SO |
+| D8 | SS1 | thermocouple 1 chip select |
+| D6 | SS2 | thermocouple 2 chip select |
+| D5 | LED | WS2812B status LED |
+| A0 / A1 | TMSTR1 / TMSTR2 | thermistor inputs (unused by the sketch) |
+| A4 / A5 | I2C | bus I2C (slice address 6) |
 
 ## Usage
 
-[Explain how to use the project. Include examples and screenshots if applicable.]
+Build `firmware/HEAT.ino` for an Arduino Nano (`arduino:avr:nano`). Over
+serial at 115200 baud send `<ch>,<target C>,<ramp C/min>` (ch 1, 2 or 0
+for both; ramp 0 steps straight to the target). The sketch prints
+setpoint, temperature and duty for both channels once a second. It drops
+HTR_EN and both PWMs on a thermocouple fault, above 100 C or with the
+E-stop low; the fault holds until the next command.
 
 ## Documentation
 
