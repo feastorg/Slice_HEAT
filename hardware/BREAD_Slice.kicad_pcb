@@ -550,7 +550,7 @@
 		(descr "Arduino Nano, http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf")
 		(tags "Arduino Nano")
 		(property "Reference" "A1"
-			(at -3.224 -2.364 0)
+			(at 7.612 33.02 0)
 			(layer "F.SilkS")
 			(uuid "1a795e47-3615-4480-8d92-c795f5d947b7")
 			(effects
