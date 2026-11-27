@@ -1,211 +1,28 @@
-schema_version: "1.0"
-
-# ── Identity ──────────────────────────────────────────────────────────────────
-id: "slice-heat"
-name: "DC Heating Element Controller"
-status: "prototype"
-category: "integrated"
-
-summary: "Two-channel DC heating element controller with thermocouple feedback."
-description: "Two 12 V heater channels, 3.5 A each (7 A total) from a separate heater supply on
-  J6 (VHTR+/VHTR-), which needs an external 8 A slow-blow fuse (none on the board). Each channel has a
-  hardware E-stop high-side switch and a PWM low-side switch, and a MAX31855K thermocouple input."
-
-# ── Versioning ────────────────────────────────────────────────────────────────
-version:
-  hardware: "0.1.0"
-  firmware: "0.1.0"
-  manifest: "0.1.0"
-
-# ── Compatibility ─────────────────────────────────────────────────────────────
-compatibility:
-  slice_spec: ">=0.1.0 <0.2.0"
-  crumbs_protocol: null
-  anolis_provider_api: null
-
-# ── Hardware ──────────────────────────────────────────────────────────────────
+# slice.yaml: BREAD Slice manifest, schema 2.0 (bread-infra spec/slice/slice-manifest-spec.md)
+schema_version: '2.0'
+id: slice-heat
+name: DC Heating Element Controller
+summary: Two-channel DC heating element controller with thermocouple feedback.
+category: integrated
+status: development
 hardware:
-  mcu:
-    type: "dev-board-socket"
-    form_factor: "nano"
-    primary: "ATmega328P"
-    supported:
-      - "ATmega328P"
-  primary_ic:
-    manufacturer: "Analog Devices"
-    part_number: "MAX31855K"
-  hw_gen_current: 1
-  hw_gen_supported: [1]
+  hw_gen_current: 3
+  interface: SI1
   pcb:
     layers: 2
-    thickness: "1.6mm"
-    copper_weight: "1oz"
-    dimensions: "70mm x 100mm"
-  connectors:
-    - ref: "J2"
-      type: "slice-bus-10pin"
-      purpose: "power-and-i2c"
-    - ref: "J6"
-      type: "push-in-terminal-2pos-5.0mm"
-      purpose: "heater-supply-12v-in"
-    - ref: "J4, J5"
-      type: "push-in-terminal-2pos-5.0mm"
-      purpose: "heater-outputs"
-    - ref: "J3"
-      type: "push-in-terminal-8pos-3.5mm"
-      purpose: "thermocouple-and-thermistor-inputs"
+    dimensions: 70mm x 100mm
+    thickness: 1.6mm
   mounting:
-    pattern: "slice-standard-v0"
-    hole_size: "M3"
-    inset: "5mm"
-  pcb_color_prototype: null
-  pcb_color_production: null
-  enclosure:
-    supported: false
-    path: null
-
-# ── Electrical ────────────────────────────────────────────────────────────────
-electrical:
-  input_voltage: "12V"
-  logic_voltage: "5V"
-  max_current: "3.5A per channel, 7A heater supply (J6)"
-  protection:
-    reverse_polarity: false
-    input_esd: false
-    fuse: false
-  isolation:
-    present: false
-
-# ── Interfaces ────────────────────────────────────────────────────────────────
+    pattern: slice-S-v0
+  mcu:
+    form_factor: nano
 interfaces:
   host:
-    type: "i2c"
     address_default: 6
-    address_configurable: true
-  data:
-    inputs:
-      - name: "TC1"
-        type: "thermocouple-k"
-      - name: "TC2"
-        type: "thermocouple-k"
-    outputs:
-      - name: "HEATER1"
-        type: "pwm-dc"
-      - name: "HEATER2"
-        type: "pwm-dc"
-
-# ── Capabilities ──────────────────────────────────────────────────────────────
-capabilities:
-  - id: "temperature_sensing"
-    channels: 2
-    control_modes: []
-  - id: "dc_heater_control"
-    channels: 2
-    control_modes: ["pi", "ramp"]
-
-# ── Firmware ──────────────────────────────────────────────────────────────────
-firmware:
-  required: true
-  path: "firmware/"
-  language: "c++"
-  framework: "arduino"
-  targets:
-    - "nano"
-  lib_deps: []
-
-# ── Protocol ──────────────────────────────────────────────────────────────────
-protocol:
-  type: "i2c-custom"
-  discovery:
-    supported: false
-  commands: []
-
-# ── Software ──────────────────────────────────────────────────────────────────
-software: null
-
-# ── Artifacts ─────────────────────────────────────────────────────────────────
-artifacts:
-  schematic: "hardware/BREAD_Slice.kicad_sch"
-  pcb: "hardware/BREAD_Slice.kicad_pcb"
-  firmware: "firmware/"
-  docs: null
-  bom: "documentation/BOM_TEMP.ods"
-  # CI's kibot job builds the gerbers and drills from this board
-  # (artifact "kibot-site": hardware/Generated/Gerbers and Drill).
-  gerbers: null
-  pick_and_place: null
-  datasheets: []
-
-# ── Manufacturing ─────────────────────────────────────────────────────────────
-manufacturing:
-  assembly_type: "manual"
-  preferred_fab: null
-  dnp_parts: []
-  critical_parts: []
-  substitutions_allowed: true
-
-# ── Validation ────────────────────────────────────────────────────────────────
-validation:
-  status: "not_validated"
-  tested_revisions: []
-  tests:
-    electrical: false
-    firmware: false
-    environmental: false
-    integration: false
-  known_issues:
-    - "No on-board fuse or reverse-polarity protection on the heater supply: fit an external 8 A slow-blow fuse in VHTR+."
-    - "Freewheel diodes D3/D4 (B340A) are 3 A parts: inductive loads are limited to 3 A per channel."
-    - "Firmware is a draft, not run on hardware: per-channel I2C reads, a command watchdog and the bread-slice-core port are still to come."
-
-# ── Safety ────────────────────────────────────────────────────────────────────
-safety:
-  hazards:
-    - "high-temperature surfaces"
-    - "thermocouple junctions touching a live heater conductor (insulated or sheathed junctions only)"
-    - "reversed heater supply conducts through D2 and the MOSFET body diodes until the external fuse opens"
-  max_safe_voltage: "12V"
-  intended_environment: "lab"
-  not_for:
-    - "human safety critical systems"
-    - "unattended heating operations"
-
-# ── Dependencies ──────────────────────────────────────────────────────────────
-dependencies:
-  hardware: []
-  firmware_libraries: []
-  software_packages: []
-
-# ── Relations ─────────────────────────────────────────────────────────────────
-related:
-  supersedes: null
-  superseded_by: null
-  variants: []
-  compatible_slices: ["slice-rlht"]
-
-# ── Maintainers ───────────────────────────────────────────────────────────────
-maintainers:
-  - name: "Cameron Brooks"
-    role: "owner"
-
-# ── License ───────────────────────────────────────────────────────────────────
-license:
-  hardware: "CERN-OHL-S-2.0"
-  firmware: "GPL-3.0-or-later"
-  software: null
-  docs: "CC-BY-4.0"
-
-# ── Repository ────────────────────────────────────────────────────────────────
-repository:
-  url: "https://github.com/feastorg/Slice_HEAT"
-
-# ── Metadata ──────────────────────────────────────────────────────────────────
 metadata:
-  created: "2026-05-19"
-  updated: "2026-11-26"
   tags:
-    - "heater-control"
-    - "thermocouple"
-    - "pid"
-    - "temperature"
-    - "dc-heating"
+  - heater-control
+  - thermocouple
+  - pid
+  - temperature
+  - dc-heating
