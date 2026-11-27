@@ -52,8 +52,9 @@ the loaf; leave it open in a loaf.
 ## Warnings
 
 - Thermocouples: use insulated (sheathed or ungrounded-junction) probes.
-  A junction touching a live heater conductor puts up to 12 V on T+/T-
-  and destroys the MAX31855.
+  A junction touching a live heater conductor puts up to 12 V on T+/T-,
+  far past the MAX31855's absolute maximum of VCC + 0.3 V (3.6 V on its
+  3.3 V supply), and can destroy it.
 - Heater supply polarity: J15 is +, J16 is -. Reversed, the TVS D2 and
   the MOSFET body diodes with the freewheel diodes conduct straight
   across the supply until the external fuse opens, and C7 (polarised)
