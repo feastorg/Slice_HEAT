@@ -8,7 +8,7 @@ category: "integrated"
 
 summary: "Two-channel DC heating element controller with thermocouple feedback."
 description: "Two 12 V heater channels, 3.5 A each (7 A total) from a separate heater supply on
-  J15/J16, which needs an external 8 A slow-blow fuse (none on the board). Each channel has a
+  J6 (VHTR+/VHTR-), which needs an external 8 A slow-blow fuse (none on the board). Each channel has a
   hardware E-stop high-side switch and a PWM low-side switch, and a MAX31855K thermocouple input."
 
 # ── Versioning ────────────────────────────────────────────────────────────────
@@ -45,15 +45,15 @@ hardware:
     - ref: "J2"
       type: "slice-bus-10pin"
       purpose: "power-and-i2c"
-    - ref: "J15/J16"
-      type: "push-in-terminal-1pos"
+    - ref: "J6"
+      type: "push-in-terminal-2pos-5.0mm"
       purpose: "heater-supply-12v-in"
-    - ref: "J11-J14"
-      type: "push-in-terminal-1pos"
+    - ref: "J4, J5"
+      type: "push-in-terminal-2pos-5.0mm"
       purpose: "heater-outputs"
-    - ref: "J3-J6"
-      type: "push-in-terminal-1pos"
-      purpose: "thermocouple-inputs"
+    - ref: "J3"
+      type: "push-in-terminal-8pos-3.5mm"
+      purpose: "thermocouple-and-thermistor-inputs"
   mounting:
     pattern: "slice-standard-v0"
     hole_size: "M3"
@@ -68,7 +68,7 @@ hardware:
 electrical:
   input_voltage: "12V"
   logic_voltage: "5V"
-  max_current: "3.5A per channel, 7A heater supply (J15/J16)"
+  max_current: "3.5A per channel, 7A heater supply (J6)"
   protection:
     reverse_polarity: false
     input_esd: false

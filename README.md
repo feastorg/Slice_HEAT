@@ -14,8 +14,8 @@ output.
 
 ## Ratings
 
-- Heater supply: 12 V only, on its own terminals J15 (VHTR, +) and
-  J16 (PGND, -), not from the bus. Fit an external 8 A slow-blow fuse
+- Heater supply: 12 V only, on its own terminal block J6 (VHTR+ and
+  VHTR- = PGND), not from the bus. Fit an external 8 A slow-blow fuse
   in the + lead.
 - Up to 3.5 A per channel, 7 A for both together.
 - Resistive heaters: up to 3.5 A per channel. An inductive load (solenoid,
@@ -35,14 +35,22 @@ output.
 
 ## Connections
 
-| Terminal | Signal | Use |
-|---|---|---|
-| J11 / J12 | HTR1+ / HTR1- | heater 1 |
-| J13 / J14 | HTR2+ / HTR2- | heater 2 |
-| J15 / J16 | VHTR+ / VHTR- (PGND) | 12 V heater supply in |
-| J3 / J4 | T+ / T- | type K thermocouple, channel 1 (U2) |
-| J5 / J6 | T+ / T- | type K thermocouple, channel 2 (U3) |
-| J7 / J8, J9 / J10 | TMSTR1 / GND, TMSTR2 / GND | thermistor inputs (R1/R2 pull-ups to +5V) |
+Wires enter all four terminal blocks from the right-hand board edge;
+each position is marked on the silkscreen.
+
+| Terminal | Pin | Signal | Use |
+|---|---|---|---|
+| J4 | 2 / 1 | HTR1+ / HTR1- | heater 1 |
+| J5 | 2 / 1 | HTR2+ / HTR2- | heater 2 |
+| J6 | 2 / 1 | VHTR+ / VHTR- (PGND) | 12 V heater supply in |
+| J3 | 5 / 6 | TC1+ / TC1- | type K thermocouple, channel 1 (U2) |
+| J3 | 7 / 8 | TC2+ / TC2- | type K thermocouple, channel 2 (U3) |
+| J3 | 1 / 2, 3 / 4 | TMSTR1 (TH1) / GND, TMSTR2 (TH2) / GND | thermistor inputs (R1/R2 pull-ups to +5V) |
+
+J4-J6 are Phoenix Contact SPT 2,5/ 2-H-5,0 (1990973): 2-position
+push-in, 5 mm pitch, 24 A, 0.2-4 mm2 rigid or 0.2-2.5 mm2 flexible
+wire, 10 mm strip length. J3 is a Phoenix Contact PT 1,5/ 8-3,5-H
+(8-position push-in, 3.5 mm pitch).
 
 E-stop: the bus E_STOP line (J2.6) must be high for the heaters to run.
 Unwired, a 1 M pull-down holds it low and the heaters stay off.
@@ -55,7 +63,8 @@ the loaf; leave it open in a loaf.
   A junction touching a live heater conductor puts up to 12 V on T+/T-,
   far past the MAX31855's absolute maximum of VCC + 0.3 V (3.6 V on its
   3.3 V supply), and can destroy it.
-- Heater supply polarity: J15 is +, J16 is -. Reversed, the TVS D2 and
+- Heater supply polarity: J6 pin 2 is + (VHTR+), pin 1 is - (VHTR-).
+  Reversed, the TVS D2 and
   the MOSFET body diodes with the freewheel diodes conduct straight
   across the supply until the external fuse opens, and C7 (polarised)
   is reverse biased. There is no reverse-polarity protection on the
