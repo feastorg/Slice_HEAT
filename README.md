@@ -18,8 +18,10 @@ output.
   J16 (PGND, -), not from the bus. Fit an external 8 A slow-blow fuse
   in the + lead.
 - Up to 3.5 A per channel, 7 A for both together.
-- Resistive heaters. An inductive load relies on the on-board freewheel
-  diodes (B340A, 3 A) alone.
+- Resistive heaters: up to 3.5 A per channel. An inductive load (solenoid,
+  fan, pump) relies on the on-board freewheel diodes D3/D4 alone, and they
+  are B340A parts rated 3 A average: keep inductive loads to 3 A per
+  channel.
 - PGND meets the logic ground at one point on the board (NT1).
 
 ## Connections
@@ -28,7 +30,7 @@ output.
 |---|---|---|
 | J11 / J12 | HTR1+ / HTR1- | heater 1 |
 | J13 / J14 | HTR2+ / HTR2- | heater 2 |
-| J15 / J16 | VHTR / PGND | 12 V heater supply in |
+| J15 / J16 | VHTR+ / VHTR- (PGND) | 12 V heater supply in |
 | J3 / J4 | T+ / T- | type K thermocouple, channel 1 (U2) |
 | J5 / J6 | T+ / T- | type K thermocouple, channel 2 (U3) |
 | J7 / J8, J9 / J10 | TMSTR1 / GND, TMSTR2 / GND | thermistor inputs (R1/R2 pull-ups to +5V) |
@@ -37,6 +39,17 @@ E-stop: the bus E_STOP line (J2.6) must be high for the heaters to run.
 Unwired, a 1 M pull-down holds it low and the heaters stay off.
 JP1 (BENCH, open by default) pulls the line high through R18 (10 k) for use off
 the loaf; leave it open in a loaf.
+
+## Warnings
+
+- Thermocouples: use insulated (sheathed or ungrounded-junction) probes.
+  A junction touching a live heater conductor puts up to 12 V on T+/T-
+  and destroys the MAX31855.
+- Heater supply polarity: J15 is +, J16 is -. Reversed, the TVS D2 and
+  the MOSFET body diodes with the freewheel diodes conduct straight
+  across the supply until the external fuse opens, and C7 (polarised)
+  is reverse biased. There is no reverse-polarity protection on the
+  board: check the polarity before connecting the supply.
 
 ## Pin map (Arduino Nano, A1)
 
