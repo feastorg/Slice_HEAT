@@ -130,7 +130,9 @@ artifacts:
   firmware: "firmware/"
   docs: null
   bom: "documentation/BOM_TEMP.ods"
-  gerbers: "hardware/Gerbers/"
+  # CI's kibot job builds the gerbers and drills from this board
+  # (artifact "kibot-site": hardware/Generated/Gerbers and Drill).
+  gerbers: null
   pick_and_place: null
   datasheets: []
 
