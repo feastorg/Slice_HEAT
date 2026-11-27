@@ -22062,6 +22062,78 @@
 		(layer "Edge.Cuts")
 		(uuid "4260f0a8-ef1b-41f3-bf98-9e2ac46a984a")
 	)
+	(gr_text "HTR1+"
+		(at 183.8 57.2 0)
+		(layer "B.SilkS")
+		(uuid "6453a786-4aa4-491f-a18d-bb8631693ace")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.18)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "HTR1-"
+		(at 183.8 61.6 0)
+		(layer "B.SilkS")
+		(uuid "3e762ccf-8f9d-4d8a-90a0-85b550c768ec")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.18)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "HTR2+"
+		(at 183.8 66 0)
+		(layer "B.SilkS")
+		(uuid "8b692ae9-dd61-4e96-86c4-d21b8e1c74d6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.18)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "HTR2-"
+		(at 183.8 70.4 0)
+		(layer "B.SilkS")
+		(uuid "85bfa4ed-455f-408c-bdad-11589fff4b88")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.18)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "VHTR+"
+		(at 183.8 74.8 0)
+		(layer "B.SilkS")
+		(uuid "5bf2987a-368a-4646-b9c1-dcbf69b8d9ab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.18)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "VHTR-"
+		(at 183.8 79.2 0)
+		(layer "B.SilkS")
+		(uuid "f5cc69ad-e641-40ef-b967-8b7d56e64df9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.18)
+			)
+			(justify mirror)
+		)
+	)
 	(gr_text "INT"
 		(at 128.014 94.1341 315)
 		(layer "F.SilkS")
