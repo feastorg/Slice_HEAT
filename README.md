@@ -73,8 +73,16 @@ Build `firmware/HEAT.ino` for an Arduino Nano (`arduino:avr:nano`). Over
 serial at 115200 baud send `<ch>,<target C>,<ramp C/min>` (ch 1, 2 or 0
 for both; ramp 0 steps straight to the target). The sketch prints
 setpoint, temperature and duty for both channels once a second. It drops
-HTR_EN and both PWMs on a thermocouple fault, above 100 C or with the
-E-stop low; the fault holds until the next command.
+HTR_EN and both PWMs on a thermocouple fault or above 100 C; that fault
+holds until the next command.
+
+The E-stop latches. E_STOP low (polled every 250 ms, and caught between
+polls by a falling edge on D2/INT0) turns both heaters off and sets both
+targets to 0, and the sketch ignores commands while latched. Releasing
+the E-stop does not restart anything: clear the latch with `C` on serial
+or the single byte 0x43 over I2C (it clears only with E_STOP high), or
+reset the Nano, then send a new target. The hardware cut through the
+high-side P-FETs works without the sketch.
 
 ## Documentation
 

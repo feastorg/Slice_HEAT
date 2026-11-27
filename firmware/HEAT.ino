@@ -10,12 +10,21 @@
 //
 // HTR_EN drops, and both PWMs go to 0, on a thermocouple fault (three
 // bad reads in a row), on either channel above MAXTEMP, or with E_STOP
-// low. A fault latches until a new command arrives.
+// low. A thermocouple or over-temperature fault latches until a new
+// command arrives.
+//
+// E_STOP low (polled each tick, and a falling edge on D2/INT0 between
+// ticks) latches an E-stop: heaters off and both targets set to 0.
+// The latch holds after E_STOP returns high, and commands are ignored,
+// until a clear ("C" on serial, the byte 0x43 on I2C) with E_STOP high,
+// or a reset. A clear leaves the targets at 0: send a new command to heat.
 //
 // Commands
-//   serial: "<ch>,<target C>,<ramp C/min>\n" (ch 1 or 2, 0 = both)
+//   serial: "<ch>,<target C>,<ramp C/min>\n" (ch 1 or 2, 0 = both);
+//   "C\n" clears the E-stop latch
 //   I2C (address 6): two floats, target and ramp, applied to both
-//   channels; a read returns channel 1's temperature and setpoint.
+//   channels; one byte 0x43 clears the E-stop latch; a read returns
+//   channel 1's temperature and setpoint.
 #include <Wire.h>
 
 #define I2C_ADR 6
@@ -44,8 +53,10 @@ float integ[2] = {0, 0};
 uint8_t duty[2] = {0, 0};
 uint8_t badReads[2] = {0, 0};
 bool fault = false;
+volatile bool estop = false;  // latched by E_STOP low; cleared by clearEstop() or a reset
 
 volatile bool i2cNew = false;
+volatile bool i2cClear = false;
 volatile float i2cTarget, i2cRamp;
 String line;
 
@@ -78,6 +89,7 @@ void allOff() {
 }
 
 void command(int ch, float t, float r) {
+  if (estop) return;
   for (uint8_t c = 0; c < 2; c++) {
     if (ch != 0 && ch != c + 1) continue;
     target[c] = t;
@@ -88,6 +100,14 @@ void command(int ch, float t, float r) {
   fault = false;
 }
 
+void estopISR() {
+  estop = true;
+}
+
+void clearEstop() {
+  if (digitalRead(PIN_ESTOP) == HIGH) estop = false;
+}
+
 void receiveEvent(int n) {
   FloatBytes a, b;
   for (int i = 0; i < n; i++) {
@@ -95,6 +115,7 @@ void receiveEvent(int n) {
     if (i < 4) a.bytes[i] = v;
     else if (i < 8) b.bytes[i - 4] = v;
   }
+  if (n == 1 && a.bytes[0] == 'C') i2cClear = true;
   if (n >= 8) {
     i2cTarget = a.number;
     i2cRamp = b.number;
@@ -122,6 +143,7 @@ void setup() {
   pinMode(PIN_CLK, OUTPUT);
   pinMode(PIN_SO, INPUT);
   pinMode(PIN_ESTOP, INPUT);  // R17 1M pulls it low: unwired = off
+  attachInterrupt(digitalPinToInterrupt(PIN_ESTOP), estopISR, FALLING);  // a press shorter than a loop tick still latches
 
   Serial.begin(115200);
   line.reserve(40);
@@ -143,6 +165,10 @@ void loop() {
     interrupts();
     command(0, t, r);
   }
+  if (i2cClear) {
+    i2cClear = false;
+    clearEstop();
+  }
 
   for (uint8_t c = 0; c < 2; c++) {
     float v = readTC(PIN_CS[c]);
@@ -155,8 +181,14 @@ void loop() {
     if (badReads[c] >= 3 || temp[c] > MAXTEMP) fault = true;
   }
 
-  bool run = digitalRead(PIN_ESTOP) == HIGH;
-  if (fault || !run) {
+  if (digitalRead(PIN_ESTOP) == LOW) estop = true;
+  if (estop) {
+    for (uint8_t c = 0; c < 2; c++) {
+      target[c] = 0;
+      setpoint[c] = 0;
+    }
+  }
+  if (fault || estop) {
     allOff();
   } else {
     digitalWrite(PIN_HTR_EN, HIGH);
@@ -189,7 +221,7 @@ void loop() {
       Serial.print(duty[c] * 100 / 255);
       Serial.print(',');
     }
-    Serial.println(fault ? "FAULT" : (run ? "RUN" : "ESTOP"));
+    Serial.println(estop ? "ESTOP" : (fault ? "FAULT" : "RUN"));
   }
 
   while (Serial.available()) {
@@ -199,7 +231,9 @@ void loop() {
       continue;
     }
     int a = line.indexOf(','), b = line.indexOf(',', a + 1);
-    if (a > 0 && b > a) {
+    if (line.charAt(0) == 'C') {
+      clearEstop();
+    } else if (a > 0 && b > a) {
       command(line.substring(0, a).toInt(), line.substring(a + 1, b).toFloat(), line.substring(b + 1).toFloat());
     }
     line = "";
