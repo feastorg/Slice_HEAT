@@ -5,6 +5,204 @@
 	(uuid "66043bca-a260-4915-9fce-8a51d324c687")
 	(paper "A3")
 	(lib_symbols
+		(symbol "KMLib_Connectors:1990973"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 16.51 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "1990973"
+				(at 16.51 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "KMLib_Connectors:1990973"
+				(at 16.51 -94.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Datasheet" "https://www.phoenixcontact.com/us/products/1990973"
+				(at 16.51 -194.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Description" "PCB terminal block, SPT 2,5/ 2-H-5,0, nominal current: 24 A, rated voltage (III/2): 400 V, nominal cross section: 2.5 mm2, number of potentials: 2, number of rows: 1, number of positions per row: 2, product range: SPT 2,5/..-H, pitch: 5 mm, connection method: Push-in spring connection, mounting: Wave soldering, conductor/PCB connection direction: 0 deg, Pin layout: Linear pinning, Solder pin [P]: 2.5 mm, number of solder pins per potential: 2"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Height" "16"
+				(at 16.51 -394.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Name" "Phoenix Contact"
+				(at 16.51 -494.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Part_Number" "1990973"
+				(at 16.51 -594.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Part Number" ""
+				(at 16.51 -694.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Price/Stock" ""
+				(at 16.51 -794.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Arrow Part Number" ""
+				(at 16.51 -894.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Arrow Price/Stock" ""
+				(at 16.51 -994.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(symbol "1990973_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 15.24 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x08"
 			(pin_names
 				(offset 1.016)
@@ -9453,174 +9651,6 @@
 		)
 	)
 	(symbol
-		(lib_id "KMLib_Connectors:1751066_Term_PressFit_1x01_5mm_Phoenix_Contact")
-		(at 337.82 50.8 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "27cf565d-609d-4e2a-adca-701ff64302c2")
-		(property "Reference" "J12"
-			(at 354.33 50.7999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Term_PressFit_1x01_5mm_Phoenix_Contact_1751066"
-			(at 354.33 53.3399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KMLib_Connectors:1751066"
-			(at 354.33 145.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "http://www.phoenixcontact.com/gb/produkte/1751066"
-			(at 354.33 245.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "PCB terminal block, nominal current: 24 A, rated voltage (III/2): 400 V, nominal cross section: 2.5 mm?, Number of potentials: 1, Number of rows: 1, Number of positions per row: 1, product range: SPT 2,5/..-H, pitch: 5 mm, connection method: Push-in spring connection, mounting: Wave soldering, conductor/PCB connection direction: 0 ?, color: green, Pin layout: Linear double pinning, Solder pin [P]: 2.5 mm, type of packaging: packed in cardboard"
-			(at 337.82 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "14.4"
-			(at 354.33 445.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Phoenix Contact"
-			(at 354.33 545.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "1751066"
-			(at 354.33 645.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 354.33 745.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 354.33 845.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 354.33 945.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 354.33 1045.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "1"
-			(uuid "0c1b6a04-e1ad-417f-a387-3afa47b6ad3b")
-		)
-		(pin "2"
-			(uuid "40c99540-18a9-4993-8f47-dd34b2c7b231")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "J12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 41.91 105.41 180)
 		(unit 1)
@@ -9703,174 +9733,6 @@
 			(project "Ingredients"
 				(path "/f365b6a7-e6ac-433f-bafa-d173330fa0b6"
 					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "KMLib_Connectors:1751066_Term_PressFit_1x01_5mm_Phoenix_Contact")
-		(at 337.82 60.96 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4243f4d6-2336-44ce-ba9c-518b38e4adc6")
-		(property "Reference" "J13"
-			(at 354.33 60.9599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Term_PressFit_1x01_5mm_Phoenix_Contact_1751066"
-			(at 354.33 63.4999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KMLib_Connectors:1751066"
-			(at 354.33 155.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "http://www.phoenixcontact.com/gb/produkte/1751066"
-			(at 354.33 255.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "PCB terminal block, nominal current: 24 A, rated voltage (III/2): 400 V, nominal cross section: 2.5 mm?, Number of potentials: 1, Number of rows: 1, Number of positions per row: 1, product range: SPT 2,5/..-H, pitch: 5 mm, connection method: Push-in spring connection, mounting: Wave soldering, conductor/PCB connection direction: 0 ?, color: green, Pin layout: Linear double pinning, Solder pin [P]: 2.5 mm, type of packaging: packed in cardboard"
-			(at 337.82 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "14.4"
-			(at 354.33 455.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Phoenix Contact"
-			(at 354.33 555.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "1751066"
-			(at 354.33 655.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 354.33 755.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 354.33 855.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 354.33 955.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 354.33 1055.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "1"
-			(uuid "1964aefd-917f-4cea-92ec-5fdc9698d19a")
-		)
-		(pin "2"
-			(uuid "5366ae05-1cea-4404-9e7e-81302dfe91c6")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "J13")
 					(unit 1)
 				)
 			)
@@ -11513,342 +11375,6 @@
 		)
 	)
 	(symbol
-		(lib_id "KMLib_Connectors:1751066_Term_PressFit_1x01_5mm_Phoenix_Contact")
-		(at 337.82 71.12 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e6a08eb9-7994-4e96-91a1-947a528fcbb7")
-		(property "Reference" "J14"
-			(at 354.33 71.1199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Term_PressFit_1x01_5mm_Phoenix_Contact_1751066"
-			(at 354.33 73.6599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KMLib_Connectors:1751066"
-			(at 354.33 166.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "http://www.phoenixcontact.com/gb/produkte/1751066"
-			(at 354.33 266.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "PCB terminal block, nominal current: 24 A, rated voltage (III/2): 400 V, nominal cross section: 2.5 mm?, Number of potentials: 1, Number of rows: 1, Number of positions per row: 1, product range: SPT 2,5/..-H, pitch: 5 mm, connection method: Push-in spring connection, mounting: Wave soldering, conductor/PCB connection direction: 0 ?, color: green, Pin layout: Linear double pinning, Solder pin [P]: 2.5 mm, type of packaging: packed in cardboard"
-			(at 337.82 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "14.4"
-			(at 354.33 466.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Phoenix Contact"
-			(at 354.33 566.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "1751066"
-			(at 354.33 666.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 354.33 766.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 354.33 866.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 354.33 966.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 354.33 1066.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "1"
-			(uuid "949791a6-463f-4ff8-8cf0-0fbee4fe4509")
-		)
-		(pin "2"
-			(uuid "00fbd7dc-12e8-40eb-99c8-e268055ccaf1")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "J14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "KMLib_Connectors:1751066_Term_PressFit_1x01_5mm_Phoenix_Contact")
-		(at 337.82 40.64 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f2e556ca-477f-421e-b872-c714f5fcb435")
-		(property "Reference" "J11"
-			(at 354.33 40.6399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Term_PressFit_1x01_5mm_Phoenix_Contact_1751066"
-			(at 354.33 43.1799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KMLib_Connectors:1751066"
-			(at 354.33 135.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "http://www.phoenixcontact.com/gb/produkte/1751066"
-			(at 354.33 235.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "PCB terminal block, nominal current: 24 A, rated voltage (III/2): 400 V, nominal cross section: 2.5 mm?, Number of potentials: 1, Number of rows: 1, Number of positions per row: 1, product range: SPT 2,5/..-H, pitch: 5 mm, connection method: Push-in spring connection, mounting: Wave soldering, conductor/PCB connection direction: 0 ?, color: green, Pin layout: Linear double pinning, Solder pin [P]: 2.5 mm, type of packaging: packed in cardboard"
-			(at 337.82 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "14.4"
-			(at 354.33 435.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Phoenix Contact"
-			(at 354.33 535.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "1751066"
-			(at 354.33 635.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 354.33 735.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 354.33 835.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 354.33 935.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 354.33 1035.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "1"
-			(uuid "fb8401d9-fe48-467a-8c79-53271eea00fd")
-		)
-		(pin "2"
-			(uuid "5337b689-db84-48d0-a1ca-83108440ea6e")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "J11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 146.05 58.42 0)
 		(unit 1)
@@ -12008,342 +11534,6 @@
 			(project "BREAD_Slice"
 				(path "/66043bca-a260-4915-9fce-8a51d324c687"
 					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "KMLib_Connectors:1751066_Term_PressFit_1x01_5mm_Phoenix_Contact")
-		(at 337.82 81.28 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f4f76c15-ac06-472a-829a-27dd6692218a")
-		(property "Reference" "J15"
-			(at 354.33 81.2799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Term_PressFit_1x01_5mm_Phoenix_Contact_1751066"
-			(at 354.33 83.8199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KMLib_Connectors:1751066"
-			(at 354.33 176.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "http://www.phoenixcontact.com/gb/produkte/1751066"
-			(at 354.33 276.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "PCB terminal block, nominal current: 24 A, rated voltage (III/2): 400 V, nominal cross section: 2.5 mm?, Number of potentials: 1, Number of rows: 1, Number of positions per row: 1, product range: SPT 2,5/..-H, pitch: 5 mm, connection method: Push-in spring connection, mounting: Wave soldering, conductor/PCB connection direction: 0 ?, color: green, Pin layout: Linear double pinning, Solder pin [P]: 2.5 mm, type of packaging: packed in cardboard"
-			(at 337.82 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "14.4"
-			(at 354.33 476.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Phoenix Contact"
-			(at 354.33 576.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "1751066"
-			(at 354.33 676.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 354.33 776.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 354.33 876.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 354.33 976.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 354.33 1076.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "1"
-			(uuid "f01ca014-2c93-4c7c-92c7-f18b9df45622")
-		)
-		(pin "2"
-			(uuid "eadc8f0e-6ecb-4632-bc9e-a85252edd01b")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "J15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "KMLib_Connectors:1751066_Term_PressFit_1x01_5mm_Phoenix_Contact")
-		(at 337.82 91.44 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "66068c11-9d4a-4a19-87d8-733ccee66245")
-		(property "Reference" "J16"
-			(at 354.33 91.4399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Term_PressFit_1x01_5mm_Phoenix_Contact_1751066"
-			(at 354.33 93.9799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KMLib_Connectors:1751066"
-			(at 354.33 186.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "http://www.phoenixcontact.com/gb/produkte/1751066"
-			(at 354.33 286.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "PCB terminal block, nominal current: 24 A, rated voltage (III/2): 400 V, nominal cross section: 2.5 mm?, Number of potentials: 1, Number of rows: 1, Number of positions per row: 1, product range: SPT 2,5/..-H, pitch: 5 mm, connection method: Push-in spring connection, mounting: Wave soldering, conductor/PCB connection direction: 0 ?, color: green, Pin layout: Linear double pinning, Solder pin [P]: 2.5 mm, type of packaging: packed in cardboard"
-			(at 337.82 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "14.4"
-			(at 354.33 486.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Phoenix Contact"
-			(at 354.33 586.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "1751066"
-			(at 354.33 686.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 354.33 786.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 354.33 886.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 354.33 986.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 354.33 1086.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "1"
-			(uuid "a6f2e57b-2246-43ba-bc38-4fb936a155ad")
-		)
-		(pin "2"
-			(uuid "bdabe0ae-5cd8-4009-95e3-354e316edd97")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "J16")
 					(unit 1)
 				)
 			)
@@ -14215,7 +13405,7 @@
 		)
 		(uuid "2aa9a120-7afa-48a3-9f76-7fcedacc3396")
 	)
-	(text "Channel n: heater between HTRn+ and HTRn- (J11/J12, J13/J14).\nLow side QN switches at the PWM (D11, D10; 490 Hz analogWrite).\nHigh side QP is on only while CUT is pulled low (E_STOP AND HTR_EN):\nVgs = -VHTR x 10k / 13.3k = -9.0 V at 12 V. B340A freewheel for inductive loads."
+	(text "Channel n: heater between HTRn+ and HTRn- (J4, J5).\nLow side QN switches at the PWM (D11, D10; 490 Hz analogWrite).\nHigh side QP is on only while CUT is pulled low (E_STOP AND HTR_EN):\nVgs = -VHTR x 10k / 13.3k = -9.0 V at 12 V. B340A freewheel for inductive loads."
 		(exclude_from_sim no)
 		(at 208.28 88.9 0)
 		(effects
@@ -14226,343 +13416,7 @@
 		)
 		(uuid "c8f1845e-0130-4fa7-815c-bac134a4a14c")
 	)
-	(wire
-		(pts
-			(xy 337.82 43.18) (xy 335.28 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53c8adf4-df8b-44ab-8a7a-0b6026cf7f13")
-	)
-	(wire
-		(pts
-			(xy 335.28 43.18) (xy 335.28 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a47da96-88cd-4e1a-b69c-887f1d3af67d")
-	)
-	(wire
-		(pts
-			(xy 337.82 40.64) (xy 335.28 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "32bb6955-97c3-4ba8-a9e8-70a792b5b774")
-	)
-	(junction
-		(at 335.28 40.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "af04d10a-2b7e-4c58-a100-827cfe8d9230")
-	)
-	(wire
-		(pts
-			(xy 335.28 40.64) (xy 330.2 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "408ead6e-bb2d-4ca3-8277-3ea31e3872d2")
-	)
-	(label "HTR1+"
-		(at 330.2 40.64 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "829bd778-c964-44ff-860d-d0f0623971d6")
-	)
-	(wire
-		(pts
-			(xy 337.82 53.34) (xy 335.28 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a093aac-c803-4af1-9121-f0c20a9cec5f")
-	)
-	(wire
-		(pts
-			(xy 335.28 53.34) (xy 335.28 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "262e3b77-39ac-4072-beab-c35278bb6829")
-	)
-	(wire
-		(pts
-			(xy 337.82 50.8) (xy 335.28 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2c56b9d-e508-4df9-908f-902171cc725f")
-	)
-	(junction
-		(at 335.28 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ba15dbdb-166e-49a6-b275-967d373a9e54")
-	)
-	(wire
-		(pts
-			(xy 335.28 50.8) (xy 330.2 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0477a2c3-e714-4006-90df-74f06c2ae6d7")
-	)
-	(label "HTR1-"
-		(at 330.2 50.8 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7cab3401-4fcd-4e80-86fe-e851634cfb55")
-	)
-	(wire
-		(pts
-			(xy 337.82 63.5) (xy 335.28 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d645234-8403-4964-b219-25c013fb060b")
-	)
-	(wire
-		(pts
-			(xy 335.28 63.5) (xy 335.28 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68dc4f8e-d577-46f7-b251-7f7e731d544b")
-	)
-	(wire
-		(pts
-			(xy 337.82 60.96) (xy 335.28 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5d74b77-9c11-47b4-a24e-93d6e7877d3a")
-	)
-	(junction
-		(at 335.28 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "42e2368b-0449-406a-a840-3fa03278cfc6")
-	)
-	(wire
-		(pts
-			(xy 335.28 60.96) (xy 330.2 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7cc4442a-398a-43e9-9d63-a31439f61657")
-	)
-	(label "HTR2+"
-		(at 330.2 60.96 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e91c0f71-4596-495d-a596-d3a6574bd854")
-	)
-	(wire
-		(pts
-			(xy 337.82 73.66) (xy 335.28 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3fbe150c-371b-4479-a292-62c24c312b10")
-	)
-	(wire
-		(pts
-			(xy 335.28 73.66) (xy 335.28 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a27f051-514c-456f-8e00-bf9784fc78d7")
-	)
-	(wire
-		(pts
-			(xy 337.82 71.12) (xy 335.28 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2a8bcd6-6eb9-4a08-a25f-b8d2185d3b0d")
-	)
-	(junction
-		(at 335.28 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "df943fbd-8943-4751-a0a9-8c47b7c64972")
-	)
-	(wire
-		(pts
-			(xy 335.28 71.12) (xy 330.2 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4bde3e4f-f9cc-4daa-8bbc-4fb1b3763d07")
-	)
-	(label "HTR2-"
-		(at 330.2 71.12 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "36015b75-552d-4261-b1c6-b76e67e20b58")
-	)
-	(wire
-		(pts
-			(xy 337.82 83.82) (xy 335.28 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "459ee786-dadc-4611-953d-c8e2808a31e3")
-	)
-	(wire
-		(pts
-			(xy 335.28 83.82) (xy 335.28 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e5e26e34-f9a4-4d93-8467-70ffd655e581")
-	)
-	(wire
-		(pts
-			(xy 337.82 81.28) (xy 335.28 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3431b672-e4ef-46fb-a273-0fbf4b523eb1")
-	)
-	(junction
-		(at 335.28 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2d14ff71-d5b5-4c32-a941-dcdbac88cf44")
-	)
-	(wire
-		(pts
-			(xy 335.28 81.28) (xy 330.2 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6524da1-550e-489c-8683-cbd4cb368b0d")
-	)
-	(label "VHTR"
-		(at 330.2 81.28 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "63d2314b-ec3e-4486-a2b3-1ea033978468")
-	)
-	(wire
-		(pts
-			(xy 337.82 93.98) (xy 335.28 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c4049ab-8e0b-487d-8be1-f010459253d5")
-	)
-	(wire
-		(pts
-			(xy 335.28 93.98) (xy 335.28 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f5d3ad8-6a3f-4f38-ab2e-54de801edef7")
-	)
-	(wire
-		(pts
-			(xy 337.82 91.44) (xy 335.28 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7905857d-b638-4d8b-9855-6f78e3817ac4")
-	)
-	(junction
-		(at 335.28 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6af43bd6-1c63-40e3-a544-40d7afea4971")
-	)
-	(wire
-		(pts
-			(xy 335.28 91.44) (xy 330.2 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3134d992-2856-4202-a6d1-a844cdb3cfdf")
-	)
-	(label "PGND"
-		(at 330.2 91.44 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e2fb4067-8396-474c-ae66-1e665dff5360")
-	)
-	(text "Heater supply: J15 VHTR+ / J16 VHTR-, 12 V only,\n7 A max, external 8 A slow-blow fuse."
+	(text "Heater supply: J6, VHTR+ / VHTR- (PGND), 12 V only,\n7 A max, external 8 A slow-blow fuse."
 		(exclude_from_sim no)
 		(at 325.12 101.6 0)
 		(effects
@@ -20966,6 +19820,462 @@
 				)
 			)
 		)
+	)
+	(symbol
+		(lib_id "KMLib_Connectors:1990973")
+		(at 337.82 40.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e3c5168e-a066-4d09-961e-fcd77941d155")
+		(property "Reference" "J4"
+			(at 347.98 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SPT 2,5/ 2-H-5,0"
+			(at 347.98 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "KMLib_Connectors:1990973"
+			(at 337.82 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.phoenixcontact.com/us/products/1990973"
+			(at 337.82 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PCB terminal block, SPT 2,5/ 2-H-5,0, nominal current: 24 A, rated voltage (III/2): 400 V, nominal cross section: 2.5 mm2, number of potentials: 2, number of rows: 1, number of positions per row: 2, product range: SPT 2,5/..-H, pitch: 5 mm, connection method: Push-in spring connection, mounting: Wave soldering, conductor/PCB connection direction: 0 deg, Pin layout: Linear pinning, Solder pin [P]: 2.5 mm, number of solder pins per potential: 2"
+			(at 337.82 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "16"
+			(at 337.82 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Phoenix Contact"
+			(at 337.82 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "1990973"
+			(at 337.82 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "84eed79c-ab99-41c0-a8a0-3471e9caf4d6")
+		)
+		(pin "2"
+			(uuid "9488d2ce-2080-4b60-bcd7-a6d8e5e5d330")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 332.74 40.64) (xy 337.82 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca4f29bf-53fd-4507-a590-72f525fa7027")
+	)
+	(label "HTR1-"
+		(at 332.74 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "21561567-3c89-44f2-9f80-7fe3454c0414")
+	)
+	(wire
+		(pts
+			(xy 332.74 43.18) (xy 337.82 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9724423-9e22-4ec0-b7ca-ed808185cabc")
+	)
+	(label "HTR1+"
+		(at 332.74 43.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f46ce771-5caf-4831-ae60-fd90a9aeb44e")
+	)
+	(symbol
+		(lib_id "KMLib_Connectors:1990973")
+		(at 337.82 53.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f7010c2f-c6a0-42f0-b30e-529a5acf274d")
+		(property "Reference" "J5"
+			(at 347.98 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SPT 2,5/ 2-H-5,0"
+			(at 347.98 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "KMLib_Connectors:1990973"
+			(at 337.82 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.phoenixcontact.com/us/products/1990973"
+			(at 337.82 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PCB terminal block, SPT 2,5/ 2-H-5,0, nominal current: 24 A, rated voltage (III/2): 400 V, nominal cross section: 2.5 mm2, number of potentials: 2, number of rows: 1, number of positions per row: 2, product range: SPT 2,5/..-H, pitch: 5 mm, connection method: Push-in spring connection, mounting: Wave soldering, conductor/PCB connection direction: 0 deg, Pin layout: Linear pinning, Solder pin [P]: 2.5 mm, number of solder pins per potential: 2"
+			(at 337.82 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "16"
+			(at 337.82 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Phoenix Contact"
+			(at 337.82 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "1990973"
+			(at 337.82 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7ae99de6-6852-4807-93b8-af5f6b1a6e56")
+		)
+		(pin "2"
+			(uuid "37b064d1-267d-4654-a40b-f782df757418")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 332.74 53.34) (xy 337.82 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7746dfaf-789b-427b-b5cf-19c05a63e713")
+	)
+	(label "HTR2-"
+		(at 332.74 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6f1e6652-d5b3-4b79-8324-dc5a82e874be")
+	)
+	(wire
+		(pts
+			(xy 332.74 55.88) (xy 337.82 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32801282-1422-4092-a692-b47ed2317b16")
+	)
+	(label "HTR2+"
+		(at 332.74 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c372c763-9858-445c-9240-384f20901ff1")
+	)
+	(symbol
+		(lib_id "KMLib_Connectors:1990973")
+		(at 337.82 66.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "670aae90-9bbb-4501-89e3-3901a1892ec4")
+		(property "Reference" "J6"
+			(at 347.98 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SPT 2,5/ 2-H-5,0"
+			(at 347.98 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "KMLib_Connectors:1990973"
+			(at 337.82 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.phoenixcontact.com/us/products/1990973"
+			(at 337.82 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PCB terminal block, SPT 2,5/ 2-H-5,0, nominal current: 24 A, rated voltage (III/2): 400 V, nominal cross section: 2.5 mm2, number of potentials: 2, number of rows: 1, number of positions per row: 2, product range: SPT 2,5/..-H, pitch: 5 mm, connection method: Push-in spring connection, mounting: Wave soldering, conductor/PCB connection direction: 0 deg, Pin layout: Linear pinning, Solder pin [P]: 2.5 mm, number of solder pins per potential: 2"
+			(at 337.82 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "16"
+			(at 337.82 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Phoenix Contact"
+			(at 337.82 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "1990973"
+			(at 337.82 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a0da71d7-0c42-4e9e-9e38-ee2c508a35f4")
+		)
+		(pin "2"
+			(uuid "a30a0b83-1db7-4363-b128-f1004c68e557")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 332.74 66.04) (xy 337.82 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e637c3d7-39cd-47be-a64c-8c1e5cd077b5")
+	)
+	(label "PGND"
+		(at 332.74 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "79b3b4bd-5ebd-4cc3-b911-7d960c6b29f6")
+	)
+	(wire
+		(pts
+			(xy 332.74 68.58) (xy 337.82 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb7fe396-1838-447b-9a42-28505976036d")
+	)
+	(label "VHTR"
+		(at 332.74 68.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "23c36028-7d50-4d37-a9a8-e1f1e6bb853e")
 	)
 	(sheet_instances
 		(path "/"
