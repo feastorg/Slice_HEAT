@@ -6,8 +6,10 @@ name: "DC Heating Element Controller"
 status: "prototype"
 category: "integrated"
 
-summary: "DC heating element controller with thermocouple feedback and PID."
-description: null
+summary: "Two-channel DC heating element controller with thermocouple feedback."
+description: "Two 12 V heater channels, 3.5 A each (7 A total) from a separate heater supply on
+  J6 (VHTR+/VHTR-), which needs an external 8 A slow-blow fuse (none on the board). Each channel has a
+  hardware E-stop high-side switch and a PWM low-side switch, and a MAX31855K thermocouple input."
 
 # ── Versioning ────────────────────────────────────────────────────────────────
 version:
@@ -40,9 +42,18 @@ hardware:
     copper_weight: "1oz"
     dimensions: "70mm x 100mm"
   connectors:
-    - ref: "J1"
+    - ref: "J2"
       type: "slice-bus-10pin"
       purpose: "power-and-i2c"
+    - ref: "J6"
+      type: "push-in-terminal-2pos-5.0mm"
+      purpose: "heater-supply-12v-in"
+    - ref: "J4, J5"
+      type: "push-in-terminal-2pos-5.0mm"
+      purpose: "heater-outputs"
+    - ref: "J3"
+      type: "push-in-terminal-8pos-3.5mm"
+      purpose: "thermocouple-and-thermistor-inputs"
   mounting:
     pattern: "slice-standard-v0"
     hole_size: "M3"
@@ -57,7 +68,7 @@ hardware:
 electrical:
   input_voltage: "12V"
   logic_voltage: "5V"
-  max_current: null
+  max_current: "3.5A per channel, 7A heater supply (J6)"
   protection:
     reverse_polarity: false
     input_esd: false
@@ -75,18 +86,22 @@ interfaces:
     inputs:
       - name: "TC1"
         type: "thermocouple-k"
+      - name: "TC2"
+        type: "thermocouple-k"
     outputs:
       - name: "HEATER1"
+        type: "pwm-dc"
+      - name: "HEATER2"
         type: "pwm-dc"
 
 # ── Capabilities ──────────────────────────────────────────────────────────────
 capabilities:
   - id: "temperature_sensing"
-    channels: 1
+    channels: 2
     control_modes: []
   - id: "dc_heater_control"
-    channels: 1
-    control_modes: ["pid", "ramp"]
+    channels: 2
+    control_modes: ["pi", "ramp"]
 
 # ── Firmware ──────────────────────────────────────────────────────────────────
 firmware:
@@ -96,9 +111,7 @@ firmware:
   framework: "arduino"
   targets:
     - "nano"
-  lib_deps:
-    - "PID_v1"
-    - "Adafruit_MAX31855"
+  lib_deps: []
 
 # ── Protocol ──────────────────────────────────────────────────────────────────
 protocol:
@@ -117,7 +130,9 @@ artifacts:
   firmware: "firmware/"
   docs: null
   bom: "documentation/BOM_TEMP.ods"
-  gerbers: "hardware/Gerbers/"
+  # CI's kibot job builds the gerbers and drills from this board
+  # (artifact "kibot-site": hardware/Generated/Gerbers and Drill).
+  gerbers: null
   pick_and_place: null
   datasheets: []
 
@@ -138,12 +153,17 @@ validation:
     firmware: false
     environmental: false
     integration: false
-  known_issues: []
+  known_issues:
+    - "No on-board fuse or reverse-polarity protection on the heater supply: fit an external 8 A slow-blow fuse in VHTR+."
+    - "Freewheel diodes D3/D4 (B340A) are 3 A parts: inductive loads are limited to 3 A per channel."
+    - "Firmware is a draft, not run on hardware: per-channel I2C reads, a command watchdog and the bread-slice-core port are still to come."
 
 # ── Safety ────────────────────────────────────────────────────────────────────
 safety:
   hazards:
     - "high-temperature surfaces"
+    - "thermocouple junctions touching a live heater conductor (insulated or sheathed junctions only)"
+    - "reversed heater supply conducts through D2 and the MOSFET body diodes until the external fuse opens"
   max_safe_voltage: "12V"
   intended_environment: "lab"
   not_for:
@@ -182,7 +202,7 @@ repository:
 # ── Metadata ──────────────────────────────────────────────────────────────────
 metadata:
   created: "2026-05-19"
-  updated: "2026-05-19"
+  updated: "2026-11-26"
   tags:
     - "heater-control"
     - "thermocouple"
