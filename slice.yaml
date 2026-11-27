@@ -156,6 +156,7 @@ validation:
   known_issues:
     - "No on-board fuse or reverse-polarity protection on the heater supply: fit an external 8 A slow-blow fuse in VHTR+."
     - "Freewheel diodes D3/D4 (B340A) are 3 A parts: inductive loads are limited to 3 A per channel."
+    - "Firmware is a draft, not run on hardware: per-channel I2C reads, a command watchdog and the bread-slice-core port are still to come."
 
 # ── Safety ────────────────────────────────────────────────────────────────────
 safety:

@@ -69,6 +69,12 @@ the loaf; leave it open in a loaf.
 
 ## Usage
 
+> **Draft firmware.** `firmware/HEAT.ino` is a minimal first sketch: it
+> compiles but has not run on hardware, and it needs review and revision.
+> Still to come: per-channel I2C reads (a read now returns channel 1
+> only, and an I2C write sets both channels), a command watchdog, and the
+> port to bread-slice-core.
+
 Build `firmware/HEAT.ino` for an Arduino Nano (`arduino:avr:nano`). Over
 serial at 115200 baud send `<ch>,<target C>,<ramp C/min>` (ch 1, 2 or 0
 for both; ramp 0 steps straight to the target). The sketch prints

@@ -1,5 +1,9 @@
 // SLC_HEAT: two-channel heater controller (R1 11-2026 board).
 //
+// DRAFT: a minimal first sketch. It compiles but has not run on hardware,
+// and it needs review and revision: per-channel I2C reads, a command
+// watchdog and the port to bread-slice-core are still to come.
+//
 // Pin map (A1, Arduino Nano):
 //   D11 PWM1   heater 1 low-side gate (Q2), analogWrite
 //   D10 PWM2   heater 2 low-side gate (Q4), analogWrite
