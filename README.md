@@ -23,8 +23,8 @@ output.
   are B340A parts rated 3 A average: keep inductive loads to 3 A per
   channel.
 - PGND meets the logic ground at one point on the board (NT1).
-- FET heat: the drain tabs of Q2-Q4 sit on 1.73-1.76 cm2 of 1 oz
-  copper each (F.Cu and B.Cu, joined by thermal vias; Q1 4.8 cm2), less
+- FET heat: the drain tabs of Q2-Q4 sit on 1.74-1.93 cm2 of 1 oz
+  copper each (F.Cu and B.Cu, joined by thermal vias; Q1 4.95 cm2), less
   than the 1 in2 of 2 oz behind the datasheets' RθJA. At 3.5 A and
   100 % duty, with RDS(on) at TJ 125 C, the AOD4184A low side dissipates
   0.20 W and the AOD4185 high side 0.38 W, so TJ at 50 C ambient is at
